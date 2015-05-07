@@ -1,0 +1,14 @@
+PODS:
+  - DVACategories (0.1.0)
+
+DEPENDENCIES:
+  - DVACategories (from `../`)
+
+EXTERNAL SOURCES:
+  DVACategories:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DVACategories: bcead083840b1bb2d86b38bce0076dfc5ad69ca1
+
+COCOAPODS: 0.36.3
