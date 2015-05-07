@@ -9,28 +9,53 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of DVACategories."
+  s.version          = "1.0.0"
+  s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
-                       An optional longer description of DVACategories
+                       This is a pod containing categories commonly used on iOS development.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                        Currently it holds:
+
+                        * Analytics:
+                        ** GAI+DVALib: A category helper for the Google Analytics Platform
+                        * UIColor:
+                        ** UIColor+DVALib: A class that implements helper for UIColor.
+                        * NSAttributedString:
+                        ** NSAttributedString+DVASize: A class to compute size for attributtedString
+                        * UITableView:
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DVACategories"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/DVALibs/DVACategories"
   s.license          = 'MIT'
   s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.es" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DVACategories.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = {    :git => "https://bitbucket.com/DVALibs/DVACategories.git",
+                            :tag => s.version.to_s,
+                            :submodules => true }
+  s.social_media_url = 'https://twitter.com/pabloromeu'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'DVACategories' => ['Pod/Assets/*.png']
-  }
+#s.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
+#  s.subspec 'Core' do |cs|
+#    cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c.md}'
+#  end
+  s.subspec 'Analytics' do |analytics|
+        analytics.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.11'
+        analytics.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
+  end
+  s.subspec 'UIColor' do |uicolor|
+    uicolor.source_files = 'Pod/Classes/UIColor/**/*.{h,m}'
+  end
+  s.subspec 'NSAttributedString' do |nsattributedstring|
+    nsattributedstring.source_files = 'Pod/Classes/NSAttributtedString/**/*.{h,m}'
+  end
+  s.subspec 'UITableView' do |uitableview|
+    uitableview.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
+  end
+
+  # s.resource_bundles = {
+  #    'DVACategories' => ['Pod/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
