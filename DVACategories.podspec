@@ -23,6 +23,11 @@ Pod::Spec.new do |s|
                         * NSAttributedString:
                         ** NSAttributedString+DVASize: A class to compute size for attributtedString
                         * UITableView:
+                        ** UITableView+DVACellHeight: Calculates heights for cells at tableViews
+# --------
+# ADD NEW CATEGORIES HERE
+# --------
+
                        DESC
   s.homepage         = "https://github.com/DVALibs/DVACategories"
   s.license          = 'MIT'
@@ -36,22 +41,37 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 #s.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
-#  s.subspec 'Core' do |cs|
-#    cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c.md}'
-#  end
-  s.subspec 'Analytics' do |analytics|
-        analytics.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.11'
-        analytics.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
+  s.subspec 'DVACategories' do |cs|
+    cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
+    cs.dependency 'DVACategories/Analytics'
+    cs.dependency 'DVACategories/UIColor'
+    cs.dependency 'DVACategories/NSAttributedString'
+    cs.dependency 'DVACategories/NSString'
+    cs.dependency 'DVACategories/UITableView'
+# --------
+# ADD NEW POD NAMES HERE
+# --------
   end
-  s.subspec 'UIColor' do |uicolor|
-    uicolor.source_files = 'Pod/Classes/UIColor/**/*.{h,m}'
+
+  s.subspec 'Analytics' do |sp|
+        sp.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.11'
+        sp.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
   end
-  s.subspec 'NSAttributedString' do |nsattributedstring|
-    nsattributedstring.source_files = 'Pod/Classes/NSAttributtedString/**/*.{h,m}'
+  s.subspec 'UIColor' do |sp|
+    sp.source_files = 'Pod/Classes/UIColor/**/*.{h,m}'
   end
-  s.subspec 'UITableView' do |uitableview|
-    uitableview.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
+  s.subspec 'NSAttributedString' do |sp|
+    sp.source_files = 'Pod/Classes/NSAttributtedString/**/*.{h,m}'
   end
+  s.subspec 'NSString' do |sp|
+    sp.source_files = 'Pod/Classes/NSString/**/*.{h,m}'
+  end
+  s.subspec 'UITableView' do |sp|
+    sp.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
+  end
+# --------
+# ADD NEW SUBSPECS HERE
+# --------
 
   # s.resource_bundles = {
   #    'DVACategories' => ['Pod/Assets/*.png']

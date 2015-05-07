@@ -1,25 +1,69 @@
 {
   "name": "DVACategories",
-  "version": "0.1.0",
-  "summary": "A short description of DVACategories.",
-  "description": "                       An optional longer description of DVACategories\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DVACategories",
+  "version": "1.0.0",
+  "summary": "This pod hosts DVACategories commonly used by DVA iOS developers.",
+  "description": "                       This is a pod containing categories commonly used on iOS development.\n\n                        Currently it holds:\n\n                        * Analytics:\n                        ** GAI+DVALib: A category helper for the Google Analytics Platform\n                        * UIColor:\n                        ** UIColor+DVALib: A class that implements helper for UIColor.\n                        * NSAttributedString:\n                        ** NSAttributedString+DVASize: A class to compute size for attributtedString\n                        * UITableView:\n                        ** UITableView+DVACellHeight: Calculates heights for cells at tableViews\n# --------\n# ADD NEW CATEGORIES HERE\n# --------\n\n",
+  "homepage": "https://github.com/DVALibs/DVACategories",
   "license": "MIT",
   "authors": {
     "Pablo Romeu": "pablo.romeu@develapps.es"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DVACategories.git",
-    "tag": "0.1.0"
+    "git": "https://bitbucket.com/DVALibs/DVACategories.git",
+    "tag": "1.0.0",
+    "submodules": true
   },
+  "social_media_url": "https://twitter.com/pabloromeu",
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "DVACategories": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "subspecs": [
+    {
+      "name": "DVACategories",
+      "source_files": "Pod/Classes/Core/**/*.{h,m,c}",
+      "dependencies": {
+        "DVACategories/Analytics": [
+
+        ],
+        "DVACategories/UIColor": [
+
+        ],
+        "DVACategories/NSAttributedString": [
+
+        ],
+        "DVACategories/NSString": [
+
+        ],
+        "DVACategories/UITableView": [
+
+        ]
+      }
+    },
+    {
+      "name": "Analytics",
+      "dependencies": {
+        "GoogleAnalytics-iOS-SDK": [
+          "~> 3.11"
+        ]
+      },
+      "source_files": "Pod/Classes/Analytics/**/*.{h,m}"
+    },
+    {
+      "name": "UIColor",
+      "source_files": "Pod/Classes/UIColor/**/*.{h,m}"
+    },
+    {
+      "name": "NSAttributedString",
+      "source_files": "Pod/Classes/NSAttributtedString/**/*.{h,m}"
+    },
+    {
+      "name": "NSString",
+      "source_files": "Pod/Classes/NSString/**/*.{h,m}"
+    },
+    {
+      "name": "UITableView",
+      "source_files": "Pod/Classes/UITableView/**/*.{h,m}"
+    }
+  ]
 }

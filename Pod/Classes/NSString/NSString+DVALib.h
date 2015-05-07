@@ -6,4 +6,4 @@
 //  Copyright (c) 2015 Develapps. All rights reserved.
 //
 
-#import "NSString+DVAValidator"
+#import "NSString+DVAValidator.h"

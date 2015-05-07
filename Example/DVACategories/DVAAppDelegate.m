@@ -7,12 +7,15 @@
 //
 
 #import "DVAAppDelegate.h"
+#import <DVACategories/DVACategories.h>
 
 @implementation DVAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [GAI dva_sendAppOpen:@""];
+
     return YES;
 }
 							
