@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 # --------
 
                        DESC
-  s.homepage         = "https://github.com/DVALibs/DVACategories"
+  s.homepage         = "https://www.develapps.es"
   s.license          = 'MIT'
   s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.es" }
   s.source           = {    :git => "https://bitbucket.com/DVALibs/DVACategories.git",
@@ -43,35 +43,35 @@ Pod::Spec.new do |s|
 
 #s.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
 
-#  s.subspec 'DVACategories' do |cs|
-#    cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
-#    cs.dependency 'DVACategories/Analytics'
-#    cs.dependency 'DVACategories/UIColor'
-#    cs.dependency 'DVACategories/NSAttributedString'
-#    cs.dependency 'DVACategories/NSString'
-#    cs.dependency 'DVACategories/UITableView'
+  s.subspec 'DVACategories' do |cs|
+    cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
+    cs.dependency 'DVACategories/Analytics'
+    cs.dependency 'DVACategories/UIColor'
+    cs.dependency 'DVACategories/NSAttributedString'
+    cs.dependency 'DVACategories/NSString'
+   cs.dependency 'DVACategories/UITableView'
 # --------
 # ADD NEW POD NAMES HERE
 # --------
-#  end
+  end
 
-#  s.subspec 'Analytics' do |sp|
-#        sp.platform = :ios, '7.0'
-#        sp.ios.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.11'
-#        sp.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
-#  end
+  s.subspec 'Analytics' do |sp|
+        sp.platform = :ios, '7.0'
+        sp.ios.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.1'
+        sp.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
+  end
   s.subspec 'UIColor' do |sp|
     sp.source_files = 'Pod/Classes/UIColor/**/*.{h,m}'
   end
-#  s.subspec 'NSAttributedString' do |sp|
-#    sp.source_files = 'Pod/Classes/NSAttributtedString/**/*.{h,m}'
-#  end
-#  s.subspec 'NSString' do |sp|
-#    sp.source_files = 'Pod/Classes/NSString/**/*.{h,m}'
-#  end
-#  s.subspec 'UITableView' do |sp|
-#    sp.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
-#  end
+  s.subspec 'NSAttributedString' do |sp|
+    sp.source_files = 'Pod/Classes/NSAttributtedString/**/*.{h,m}'
+  end
+  s.subspec 'NSString' do |sp|
+    sp.source_files = 'Pod/Classes/NSString/**/*.{h,m}'
+  end
+  s.subspec 'UITableView' do |sp|
+    sp.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
+  end
 # --------
 # ADD NEW SUBSPECS HERE
 # --------
