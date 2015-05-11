@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint DVACategories.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -42,9 +34,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks            = "UIKit" , "Foundation"
 
-#s.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
+#  s.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
 
-  s.subspec 'DVACategories' do |cs|
+  s.subspec 'Core' do |cs|
     cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
     
     # ANALITICS IS BROKEN. Cannot use podspec https://github.com/CocoaPods/CocoaPods/issues/3106
