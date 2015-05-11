@@ -37,7 +37,8 @@ Pod::Spec.new do |s|
                             :submodules => true }
   s.social_media_url = 'https://twitter.com/pabloromeu'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '7.1'
+  s.ios.deployment_target = '7.1'
   s.requires_arc = true
   s.frameworks            = "UIKit" , "Foundation"
 
@@ -45,21 +46,24 @@ Pod::Spec.new do |s|
 
   s.subspec 'DVACategories' do |cs|
     cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
-    cs.dependency 'DVACategories/Analytics'
+    
+    # ANALITICS IS BROKEN. Cannot use podspec
+#     cs.dependency 'DVACategories/Analytics'
     cs.dependency 'DVACategories/UIColor'
     cs.dependency 'DVACategories/NSAttributedString'
     cs.dependency 'DVACategories/NSString'
-   cs.dependency 'DVACategories/UITableView'
+    cs.dependency 'DVACategories/UITableView'
 # --------
 # ADD NEW POD NAMES HERE
 # --------
   end
 
-  s.subspec 'Analytics' do |sp|
-        sp.platform = :ios, '7.0'
-        sp.ios.dependency 'GoogleAnalytics-iOS-SDK', '~> 3.1'
-        sp.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
-  end
+# ANALITICS IS BROKEN. Cannot use podspec
+#   s.subspec 'Analytics' do |sp|
+#         sp.platform = :ios, '7.1'
+#         sp.dependency 'GoogleAnalytics-iOS-SDK'
+#         sp.source_files = 'Pod/Classes/Analytics/**/*.{h,m}'
+#   end
   s.subspec 'UIColor' do |sp|
     sp.source_files = 'Pod/Classes/UIColor/**/*.{h,m}'
   end
