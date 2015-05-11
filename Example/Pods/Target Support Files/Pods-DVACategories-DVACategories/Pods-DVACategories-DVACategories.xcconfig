@@ -1,0 +1,1 @@
+PODS_DVACATEGORIES_DVACATEGORIES_OTHER_LDFLAGS = -framework "Foundation" -framework "UIKit"

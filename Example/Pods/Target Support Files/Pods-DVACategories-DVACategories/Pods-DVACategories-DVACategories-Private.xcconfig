@@ -1,6 +1,6 @@
 #include "Pods-DVACategories-DVACategories.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DVACategories" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DVACategories" "${PODS_ROOT}/Headers/Public/GoogleAnalytics-iOS-SDK"
-OTHER_LDFLAGS = -ObjC
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DVACategories" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DVACategories"
+OTHER_LDFLAGS = ${PODS_DVACATEGORIES_DVACATEGORIES_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES

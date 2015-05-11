@@ -1,31 +1,32 @@
 {
   "name": "DVACategories",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "This pod hosts DVACategories commonly used by DVA iOS developers.",
   "description": "                       This is a pod containing categories commonly used on iOS development.\n\n                        Currently it holds:\n\n                        * Analytics:\n                        ** GAI+DVALib: A category helper for the Google Analytics Platform\n                        * UIColor:\n                        ** UIColor+DVALib: A class that implements helper for UIColor.\n                        * NSAttributedString:\n                        ** NSAttributedString+DVASize: A class to compute size for attributtedString\n                        * UITableView:\n                        ** UITableView+DVACellHeight: Calculates heights for cells at tableViews\n# --------\n# ADD NEW CATEGORIES HERE\n# --------\n\n",
-  "homepage": "https://github.com/DVALibs/DVACategories",
+  "homepage": "https://www.develapps.es",
   "license": "MIT",
   "authors": {
     "Pablo Romeu": "pablo.romeu@develapps.es"
   },
   "source": {
     "git": "https://bitbucket.com/DVALibs/DVACategories.git",
-    "tag": "1.0.0",
+    "tag": "1.0.1",
     "submodules": true
   },
   "social_media_url": "https://twitter.com/pabloromeu",
   "platforms": {
-    "ios": "7.0"
+    "ios": "7.1"
   },
   "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
   "subspecs": [
     {
-      "name": "DVACategories",
+      "name": "Core",
       "source_files": "Pod/Classes/Core/**/*.{h,m,c}",
       "dependencies": {
-        "DVACategories/Analytics": [
-
-        ],
         "DVACategories/UIColor": [
 
         ],
@@ -39,15 +40,6 @@
 
         ]
       }
-    },
-    {
-      "name": "Analytics",
-      "dependencies": {
-        "GoogleAnalytics-iOS-SDK": [
-          "~> 3.11"
-        ]
-      },
-      "source_files": "Pod/Classes/Analytics/**/*.{h,m}"
     },
     {
       "name": "UIColor",

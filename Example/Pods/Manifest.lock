@@ -1,26 +1,19 @@
 PODS:
-  - DVACategories (1.0.0):
-    - DVACategories/Analytics (= 1.0.0)
-    - DVACategories/DVACategories (= 1.0.0)
-    - DVACategories/NSAttributedString (= 1.0.0)
-    - DVACategories/NSString (= 1.0.0)
-    - DVACategories/UIColor (= 1.0.0)
-    - DVACategories/UITableView (= 1.0.0)
-  - DVACategories/Analytics (1.0.0):
-    - GoogleAnalytics-iOS-SDK (~> 3.11)
-  - DVACategories/DVACategories (1.0.0):
-    - DVACategories/Analytics
+  - DVACategories (1.0.1):
+    - DVACategories/Core (= 1.0.1)
+    - DVACategories/NSAttributedString (= 1.0.1)
+    - DVACategories/NSString (= 1.0.1)
+    - DVACategories/UIColor (= 1.0.1)
+    - DVACategories/UITableView (= 1.0.1)
+  - DVACategories/Core (1.0.1):
     - DVACategories/NSAttributedString
     - DVACategories/NSString
     - DVACategories/UIColor
     - DVACategories/UITableView
-  - DVACategories/NSAttributedString (1.0.0)
-  - DVACategories/NSString (1.0.0)
-  - DVACategories/UIColor (1.0.0)
-  - DVACategories/UITableView (1.0.0)
-  - GoogleAnalytics-iOS-SDK (3.11):
-    - GoogleAnalytics-iOS-SDK/Core (= 3.11)
-  - GoogleAnalytics-iOS-SDK/Core (3.11)
+  - DVACategories/NSAttributedString (1.0.1)
+  - DVACategories/NSString (1.0.1)
+  - DVACategories/UIColor (1.0.1)
+  - DVACategories/UITableView (1.0.1)
 
 DEPENDENCIES:
   - DVACategories (from `../`)
@@ -30,7 +23,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DVACategories: 31e102854011f6d20df9c2bfafd4d1dd67d9da63
-  GoogleAnalytics-iOS-SDK: fb15cc7e3d01d06d531653f37443fda90274d53d
+  DVACategories: 451aa0884b5a4e7935ff551481f0c57628911261
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.37.1
