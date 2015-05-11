@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   s.subspec 'DVACategories' do |cs|
     cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
     
-    # ANALITICS IS BROKEN. Cannot use podspec
+    # ANALITICS IS BROKEN. Cannot use podspec https://github.com/CocoaPods/CocoaPods/issues/3106
 #     cs.dependency 'DVACategories/Analytics'
     cs.dependency 'DVACategories/UIColor'
     cs.dependency 'DVACategories/NSAttributedString'
