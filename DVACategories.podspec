@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.0.2"
+  s.version          = "1.1.0"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -45,6 +45,8 @@ Pod::Spec.new do |s|
     cs.dependency 'DVACategories/NSAttributedString'
     cs.dependency 'DVACategories/NSString'
     cs.dependency 'DVACategories/UITableView'
+#    cs.dependency 'DVACategories/DVAParseNotifications'
+#    cs.dependency 'DVACategories/DVAParseRemoteNotificationsDefaultHandler'
 # --------
 # ADD NEW POD NAMES HERE
 # --------
@@ -68,7 +70,16 @@ Pod::Spec.new do |s|
   s.subspec 'UITableView' do |sp|
     sp.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
   end
-# --------
+#   s.subspec 'DVAParseNotifications' do |sp|
+#     sp.dependency 'Parse'
+#     sp.source_files = 'Pod/Classes/ParsePushNotifications/AppDelegate+DVAParseNotifications/**/*.{h,m}'
+#   end
+#   s.subspec 'DVAParseRemoteNotificationsDefaultHandler' do |sp|
+#     sp.dependency 'Parse'
+#     sp.dependency 'DVACategories/DVAParseNotifications'
+#     sp.source_files = 'Pod/Classes/ParsePushNotifications/AppDelegate+DVAParseRemoteNotificationsDefaultHandler/**/*.{h,m}'
+#   end
+# # --------
 # ADD NEW SUBSPECS HERE
 # --------
 
