@@ -29,7 +29,8 @@ Currently It Implements:
 * DVACategories/NSAttributedString (1.0.1)
 * DVACategories/NSString (1.0.1)
 * DVACategories/UITableView (1.0.1)
-
+* DVACategories/CAGradientLayer (1.2.0)
+* DVACategories/CAShapeLayer (1.2.0)
 ## Author
 
 Pablo Romeu, pablo.romeu@develapps.es
