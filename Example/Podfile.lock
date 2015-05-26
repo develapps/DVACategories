@@ -1,19 +1,24 @@
 PODS:
-  - DVACategories (1.0.1):
-    - DVACategories/Core (= 1.0.1)
-    - DVACategories/NSAttributedString (= 1.0.1)
-    - DVACategories/NSString (= 1.0.1)
-    - DVACategories/UIColor (= 1.0.1)
-    - DVACategories/UITableView (= 1.0.1)
-  - DVACategories/Core (1.0.1):
+  - DVACategories (1.2.0):
+    - DVACategories/CAGradientLayer (= 1.2.0)
+    - DVACategories/CAShapeLayer (= 1.2.0)
+    - DVACategories/Core (= 1.2.0)
+    - DVACategories/NSAttributedString (= 1.2.0)
+    - DVACategories/NSString (= 1.2.0)
+    - DVACategories/UIColor (= 1.2.0)
+    - DVACategories/UITableView (= 1.2.0)
+  - DVACategories/CAGradientLayer (1.2.0)
+  - DVACategories/CAShapeLayer (1.2.0)
+  - DVACategories/Core (1.2.0):
+    - DVACategories/CAGradientLayer
+    - DVACategories/CAShapeLayer
     - DVACategories/NSAttributedString
     - DVACategories/NSString
     - DVACategories/UIColor
-    - DVACategories/UITableView
-  - DVACategories/NSAttributedString (1.0.1)
-  - DVACategories/NSString (1.0.1)
-  - DVACategories/UIColor (1.0.1)
-  - DVACategories/UITableView (1.0.1)
+  - DVACategories/NSAttributedString (1.2.0)
+  - DVACategories/NSString (1.2.0)
+  - DVACategories/UIColor (1.2.0)
+  - DVACategories/UITableView (1.2.0)
 
 DEPENDENCIES:
   - DVACategories (from `../`)
@@ -23,6 +28,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DVACategories: 451aa0884b5a4e7935ff551481f0c57628911261
+  DVACategories: 41c6d757633c72010a025696dde58425dedbeb54
 
 COCOAPODS: 0.37.1

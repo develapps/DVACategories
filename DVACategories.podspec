@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -16,6 +16,15 @@ Pod::Spec.new do |s|
                         ** NSAttributedString+DVASize: A class to compute size for attributtedString
                         * UITableView:
                         ** UITableView+DVACellHeight: Calculates heights for cells at tableViews
+
+                        Added 1.2.0:
+
+                        * CAGradientLayer:
+                        ** CAGradientLayer+DVAGradient: Creates a gradient layer for your views.
+                        * CAShapeLayer:
+                        ** CAShapeLayer+DVADashedBorder: Creates a layer to set a dashed border on a view.
+                        ** CAShapeLayer+DVARound: Creates a layer to set a completely round side on a view.
+
 # --------
 # ADD NEW CATEGORIES HERE
 # --------
@@ -40,11 +49,13 @@ Pod::Spec.new do |s|
     cs.source_files = 'Pod/Classes/Core/**/*.{h,m,c}'
     
     # ANALITICS IS BROKEN. Cannot use podspec https://github.com/CocoaPods/CocoaPods/issues/3106
+
 #     cs.dependency 'DVACategories/Analytics'
     cs.dependency 'DVACategories/UIColor'
     cs.dependency 'DVACategories/NSAttributedString'
     cs.dependency 'DVACategories/NSString'
-    cs.dependency 'DVACategories/UITableView'
+    cs.dependency 'DVACategories/CAGradientLayer'
+    cs.dependency 'DVACategories/CAShapeLayer'
 #    cs.dependency 'DVACategories/DVAParseNotifications'
 #    cs.dependency 'DVACategories/DVAParseRemoteNotificationsDefaultHandler'
 # --------
@@ -70,6 +81,15 @@ Pod::Spec.new do |s|
   s.subspec 'UITableView' do |sp|
     sp.source_files = 'Pod/Classes/UITableView/**/*.{h,m}'
   end
+    s.subspec 'CAGradientLayer' do |sp|
+        sp.frameworks   = "QuartzCore"
+        sp.source_files = 'Pod/Classes/CAGradientLayer/**/*.{h,m}'
+    end
+    s.subspec 'CAShapeLayer' do |sp|
+        sp.frameworks   = "QuartzCore"
+        sp.source_files = 'Pod/Classes/CAShapeLayer/**/*.{h,m}'
+    end
+
 #   s.subspec 'DVAParseNotifications' do |sp|
 #     sp.dependency 'Parse'
 #     sp.source_files = 'Pod/Classes/ParsePushNotifications/AppDelegate+DVAParseNotifications/**/*.{h,m}'

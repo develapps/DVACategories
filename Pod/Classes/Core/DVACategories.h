@@ -7,12 +7,16 @@
 //
 
 
-#pragma mark - Base Objects
+#pragma mark - Base categories
 
 #import "NSAttributedString+DVALib.h"
 #import "NSString+DVALib.h"
 #import "UIColor+DVALib.h"
 
-#pragma mark - UIKit objects
+#pragma mark - UIKit categories
 
-#import "UITableView+DVACellHeight.h"
+#import "UITableView+DVALib.h"
+
+#pragma mark - QuarzCore categories
+#import "CAGradientLayer+DVALib.h"
+#import "CAShapeLayer+DVALib.h"
