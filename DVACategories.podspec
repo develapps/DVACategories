@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.2.0"
+  s.version          = "1.2.1"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
                         * UITableView:
                         ** UITableView+DVACellHeight: Calculates heights for cells at tableViews
 
-                        Added 1.2.0:
+                        Added 1.2.1:
 
                         * CAGradientLayer:
-                        ** CAGradientLayer+DVAGradient: Creates a gradient layer for your views.
+                        ** CAGradientLayer+DVAGradient: Creates a gradient layer for your views. Added animation possibilities.
                         * CAShapeLayer:
                         ** CAShapeLayer+DVADashedBorder: Creates a layer to set a dashed border on a view.
                         ** CAShapeLayer+DVARound: Creates a layer to set a completely round side on a view.
