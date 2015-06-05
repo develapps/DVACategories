@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.2.1"
+  s.version          = "1.3.0"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -25,6 +25,10 @@ Pod::Spec.new do |s|
                         ** CAShapeLayer+DVADashedBorder: Creates a layer to set a dashed border on a view.
                         ** CAShapeLayer+DVARound: Creates a layer to set a completely round side on a view.
 
+                        Added 1.3.0:
+                        * UITCollectionViewCell:
+                        ** UICollectionViewCell+DVAReusableCollectionCell: Reuses and registers cells at collectionViews
+
 # --------
 # ADD NEW CATEGORIES HERE
 # --------
@@ -32,7 +36,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://www.develapps.es"
   s.license          = 'MIT'
-  s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.es" }
+  s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.com" }
   s.source           = {    :git => "https://bitbucket.com/DVALibs/DVACategories.git",
                             :tag => s.version.to_s,
                             :submodules => true }
@@ -56,6 +60,7 @@ Pod::Spec.new do |s|
     cs.dependency 'DVACategories/NSString'
     cs.dependency 'DVACategories/CAGradientLayer'
     cs.dependency 'DVACategories/CAShapeLayer'
+    cs.dependency 'DVACategories/UICollectionViewCell'
 #    cs.dependency 'DVACategories/DVAParseNotifications'
 #    cs.dependency 'DVACategories/DVAParseRemoteNotificationsDefaultHandler'
 # --------
@@ -89,6 +94,9 @@ Pod::Spec.new do |s|
         sp.frameworks   = "QuartzCore"
         sp.source_files = 'Pod/Classes/CAShapeLayer/**/*.{h,m}'
     end
+  s.subspec 'UICollectionViewCell' do |sp|
+    sp.source_files = 'Pod/Classes/UICollectionViewCell/**/*.{h,m}'
+  end
 
 #   s.subspec 'DVAParseNotifications' do |sp|
 #     sp.dependency 'Parse'

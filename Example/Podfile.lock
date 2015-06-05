@@ -1,24 +1,27 @@
 PODS:
-  - DVACategories (1.2.0):
-    - DVACategories/CAGradientLayer (= 1.2.0)
-    - DVACategories/CAShapeLayer (= 1.2.0)
-    - DVACategories/Core (= 1.2.0)
-    - DVACategories/NSAttributedString (= 1.2.0)
-    - DVACategories/NSString (= 1.2.0)
-    - DVACategories/UIColor (= 1.2.0)
-    - DVACategories/UITableView (= 1.2.0)
-  - DVACategories/CAGradientLayer (1.2.0)
-  - DVACategories/CAShapeLayer (1.2.0)
-  - DVACategories/Core (1.2.0):
+  - DVACategories (1.3.1):
+    - DVACategories/CAGradientLayer (= 1.3.1)
+    - DVACategories/CAShapeLayer (= 1.3.1)
+    - DVACategories/Core (= 1.3.1)
+    - DVACategories/NSAttributedString (= 1.3.1)
+    - DVACategories/NSString (= 1.3.1)
+    - DVACategories/UICollectionViewCell (= 1.3.1)
+    - DVACategories/UIColor (= 1.3.1)
+    - DVACategories/UITableView (= 1.3.1)
+  - DVACategories/CAGradientLayer (1.3.1)
+  - DVACategories/CAShapeLayer (1.3.1)
+  - DVACategories/Core (1.3.1):
     - DVACategories/CAGradientLayer
     - DVACategories/CAShapeLayer
     - DVACategories/NSAttributedString
     - DVACategories/NSString
+    - DVACategories/UICollectionViewCell
     - DVACategories/UIColor
-  - DVACategories/NSAttributedString (1.2.0)
-  - DVACategories/NSString (1.2.0)
-  - DVACategories/UIColor (1.2.0)
-  - DVACategories/UITableView (1.2.0)
+  - DVACategories/NSAttributedString (1.3.1)
+  - DVACategories/NSString (1.3.1)
+  - DVACategories/UICollectionViewCell (1.3.1)
+  - DVACategories/UIColor (1.3.1)
+  - DVACategories/UITableView (1.3.1)
 
 DEPENDENCIES:
   - DVACategories (from `../`)
@@ -28,6 +31,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DVACategories: 50ba6aa773e32aed7d3c039290b3e57a28546842
+  DVACategories: ee1f6c27a7b00aa0ae5e2a2e07e52570b06c2bd4
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2
