@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.3.1"
+  s.version          = "1.3.0"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
                         ** CAShapeLayer+DVADashedBorder: Creates a layer to set a dashed border on a view.
                         ** CAShapeLayer+DVARound: Creates a layer to set a completely round side on a view.
 
-                        Added 1.3.1:
+                        Added 1.3.0:
                         * UITCollectionViewCell:
                         ** UICollectionViewCell+DVAReusableCollectionCell: Reuses and registers cells at collectionViews
 
@@ -36,11 +36,11 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://www.develapps.es"
   s.license          = 'MIT'
-  s.author           = { "Pablo Romeu" => "pablo.salva@develapps.com" }
+  s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.com" }
   s.source           = {    :git => "https://bitbucket.com/DVALibs/DVACategories.git",
                             :tag => s.version.to_s,
                             :submodules => true }
-  s.social_media_url = 'https://twitter.com/pablo_pagly'
+  s.social_media_url = 'https://twitter.com/pabloromeu'
 
   s.platform     = :ios, '7.1'
   s.ios.deployment_target = '7.1'
