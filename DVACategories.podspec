@@ -36,7 +36,8 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://www.develapps.es"
   s.license          = 'MIT'
-  s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.com" }
+  s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.com" ,
+                         "Pablo Salva" => "pablo.salva@develapps.com" }
   s.source           = {    :git => "https://bitbucket.com/DVALibs/DVACategories.git",
                             :tag => s.version.to_s,
                             :submodules => true }
