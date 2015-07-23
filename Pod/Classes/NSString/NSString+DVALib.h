@@ -7,4 +7,4 @@
 //
 
 #import "NSString+DVAValidator.h"
-#import "NSString+DVAValidator.h"
+#import "NSString+DVASecure.h"
