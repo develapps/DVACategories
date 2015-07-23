@@ -7,570 +7,578 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0867D78AB4BE19A705C9C08E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024B1BBC3B65C9948BE05DF /* Foundation.framework */; };
-		08EF3F852AB547AE58AF3A0C /* UIColor+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF736930B18C17AEE77FADD /* UIColor+DVALib.h */; };
-		0C5A43945EC97B5A0BE6BDD4 /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8935880DE4DAF65A4ABFE014 /* UICollectionViewCell+DVAReusableCollectionCell.m */; };
-		0C77642BCB0746593A2793FF /* CAGradientLayer+DVAGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BADB9A23AAA59D6C47301D /* CAGradientLayer+DVAGradient.m */; };
-		0F160CCCFBD631CBCED4D461 /* UICollectionViewCell+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = A7914982B0046A076FD85DD1 /* UICollectionViewCell+DVALib.h */; };
-		13DC3C18B1E4838236EF728F /* Pods-Tests-DVACategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFDF7EF3B835712B61D11D0 /* Pods-Tests-DVACategories-dummy.m */; };
-		19673FD5AF60217CC70511A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F969B21699B7487132529 /* UIKit.framework */; };
-		26A3095FE817B621D389DEC5 /* CAShapeLayer+DVADashedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9A230A649DE70B40052EA /* CAShapeLayer+DVADashedBorder.m */; };
-		2A09FAA2223C0C7EB98D0960 /* NSString+DVAValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BA80BCC9D568ECD065FE7C6B /* NSString+DVAValidator.m */; };
-		2A9ECAB45839455CFDBF990C /* NSAttributedString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BD62C889A7A0CF03C79F6C /* NSAttributedString+DVALib.h */; };
-		399D7A652EEBCF06156EB168 /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BBB92DA57690A7CF5D6EB18 /* UICollectionViewCell+DVAReusableCollectionCell.h */; };
-		3DA6DB55F179A5CDA78DB8FC /* NSAttributedString+DVASize.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAC5B5871BEBEFAF0AE8F7D /* NSAttributedString+DVASize.h */; };
-		48B507E7EC7B5B0CD5D6A727 /* NSString+DVAValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BA80BCC9D568ECD065FE7C6B /* NSString+DVAValidator.m */; };
-		49C1C62DB1F6062E7DA6A363 /* UIColor+DVAhex.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F847F885409331D68F67EBA /* UIColor+DVAhex.h */; };
-		4DDFD9F82E32B6BFA16D121E /* NSAttributedString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BD62C889A7A0CF03C79F6C /* NSAttributedString+DVALib.h */; };
-		4E95C54DB130DC2A8F24FD28 /* Pods-DVACategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 366DFFA09D05F78624ED8B2C /* Pods-DVACategories-dummy.m */; };
-		538F377211CD6971EB14E49A /* UITableView+DVACellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A8304B387213154BFC6D9 /* UITableView+DVACellHeight.m */; };
-		59D151E52ECFB792B0A9D2D6 /* DVACategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 588E82842844D3548A9F08F0 /* DVACategories.h */; };
-		5B19BC44C346481945E01A23 /* UITableView+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C137F7DB84731616BFFCDE /* UITableView+DVALib.h */; };
-		61CAC7C0A0F77E93D5D9915E /* NSString+DVAValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = C225ECB42FEAFF978C88E91C /* NSString+DVAValidator.h */; };
-		63B6A4AE49D09D2F5C677CE9 /* UITableView+DVACellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = A9DE422E849D6C41488EF083 /* UITableView+DVACellHeight.h */; };
-		6601D286C025C845199B2CA1 /* CAGradientLayer+DVAGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2542FB1F1958CD40637BE201 /* CAGradientLayer+DVAGradient.h */; };
-		6688BE64F42BD06A664FC256 /* UIColor+DVAhex.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDF5C527B8AA81AC81C6C0 /* UIColor+DVAhex.m */; };
-		67CB915DC671B2828AC3FA3D /* NSAttributedString+DVASize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB46B8BB93175FCDACF2526 /* NSAttributedString+DVASize.m */; };
-		700206594F882075E53D5806 /* UITableView+DVACellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = A9DE422E849D6C41488EF083 /* UITableView+DVACellHeight.h */; };
-		731422497711E6959F67E53F /* UITableView+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C137F7DB84731616BFFCDE /* UITableView+DVALib.h */; };
-		76D544A847CE0BFBD49F346D /* NSAttributedString+DVASize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB46B8BB93175FCDACF2526 /* NSAttributedString+DVASize.m */; };
-		7949B1D2AEE302401171A513 /* CAShapeLayer+DVARound.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A50674852E23FDD02573A9F /* CAShapeLayer+DVARound.h */; };
-		7FF1209B5263C73CE392959E /* CAShapeLayer+DVADashedBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0C014A29B88EE2077DE37F /* CAShapeLayer+DVADashedBorder.h */; };
-		80C2FECFFEABF2A03BF1A384 /* UIColor+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF736930B18C17AEE77FADD /* UIColor+DVALib.h */; };
-		845FB1B71F63D9C8DBAF75A5 /* CAShapeLayer+DVARound.m in Sources */ = {isa = PBXBuildFile; fileRef = DA62BA78F6E48DAADA6150B5 /* CAShapeLayer+DVARound.m */; };
-		84E285C731CC60997AF49F4A /* Pods-DVACategories-DVACategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F401AEDC2C539E496B954A /* Pods-DVACategories-DVACategories-dummy.m */; };
-		9077EE4E475C449886585763 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369229642F01CE975011AD95 /* QuartzCore.framework */; };
-		9459A553F55D8D78A5DD8FA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369229642F01CE975011AD95 /* QuartzCore.framework */; };
-		9581643EA7B5BAD036DE29AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F969B21699B7487132529 /* UIKit.framework */; };
-		9E6D040042A3863421668EFD /* NSString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A817934DCF3D62A95E489F /* NSString+DVALib.h */; };
-		A060892888258E535A01C870 /* NSAttributedString+DVASize.h in Headers */ = {isa = PBXBuildFile; fileRef = FEAC5B5871BEBEFAF0AE8F7D /* NSAttributedString+DVASize.h */; };
-		A459B6C71376C4D0904F602A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024B1BBC3B65C9948BE05DF /* Foundation.framework */; };
-		A5E34C0DA5848410542478D6 /* NSString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A817934DCF3D62A95E489F /* NSString+DVALib.h */; };
-		AA0E2674CDD7187EE37C8295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024B1BBC3B65C9948BE05DF /* Foundation.framework */; };
-		AEBA51C74324ADB21FF13F34 /* CAGradientLayer+DVAGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BADB9A23AAA59D6C47301D /* CAGradientLayer+DVAGradient.m */; };
-		B04FEC26C56309D86E6B1573 /* CAGradientLayer+DVAGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2542FB1F1958CD40637BE201 /* CAGradientLayer+DVAGradient.h */; };
-		B3C76081A50128F001BFCA5D /* UIColor+DVAhex.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F847F885409331D68F67EBA /* UIColor+DVAhex.h */; };
-		B643CC29D24BA0092C2FC02C /* CAShapeLayer+DVARound.m in Sources */ = {isa = PBXBuildFile; fileRef = DA62BA78F6E48DAADA6150B5 /* CAShapeLayer+DVARound.m */; };
-		B7EFB1898DDEF17F5368AAE2 /* CAShapeLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = B619A7F91329B313FAF50C0F /* CAShapeLayer+DVALib.h */; };
-		C16F779B133BC0EB6404A3D8 /* UIColor+DVAhex.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDF5C527B8AA81AC81C6C0 /* UIColor+DVAhex.m */; };
-		C26CC249EE54F7A6289031D4 /* CAShapeLayer+DVARound.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A50674852E23FDD02573A9F /* CAShapeLayer+DVARound.h */; };
-		CD9ADDEBEDB5F0E9876ECBB9 /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BBB92DA57690A7CF5D6EB18 /* UICollectionViewCell+DVAReusableCollectionCell.h */; };
-		D3A82DF19664CD0FB8247731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7024B1BBC3B65C9948BE05DF /* Foundation.framework */; };
-		DEF8AB4771BCB61230C80B6E /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3554A6FF09D1F078802D8FDB /* Pods-Tests-dummy.m */; };
-		DFD3AF44A9EE235D3AD2611A /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8935880DE4DAF65A4ABFE014 /* UICollectionViewCell+DVAReusableCollectionCell.m */; };
-		E46D1360D4E89E7ACD6B7E26 /* UICollectionViewCell+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = A7914982B0046A076FD85DD1 /* UICollectionViewCell+DVALib.h */; };
-		E4773277C6FF7BC28ABB3A76 /* CAShapeLayer+DVADashedBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0C014A29B88EE2077DE37F /* CAShapeLayer+DVADashedBorder.h */; };
-		E7E118DAC8800216734CBB11 /* CAGradientLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2ADA577A96C9179505E230 /* CAGradientLayer+DVALib.h */; };
-		EC375CB36894E3505CD90D10 /* UITableView+DVACellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A8304B387213154BFC6D9 /* UITableView+DVACellHeight.m */; };
-		EE4394BF8567CE0A3C7BC98E /* CAShapeLayer+DVADashedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9A230A649DE70B40052EA /* CAShapeLayer+DVADashedBorder.m */; };
-		F7F646A8B71E5AEA61EB1E82 /* CAGradientLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2ADA577A96C9179505E230 /* CAGradientLayer+DVALib.h */; };
-		FC605127AD0658E3130D4805 /* NSString+DVAValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = C225ECB42FEAFF978C88E91C /* NSString+DVAValidator.h */; };
-		FDF04CF07CDA8348AFEB5C4F /* CAShapeLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = B619A7F91329B313FAF50C0F /* CAShapeLayer+DVALib.h */; };
-		FF4EACD0F48FCF607C78C5CB /* DVACategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 588E82842844D3548A9F08F0 /* DVACategories.h */; };
+		07E066AAD1AF283E56647903 /* CAShapeLayer+DVADashedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E664DC5C82C4826D66F5D /* CAShapeLayer+DVADashedBorder.m */; };
+		0BC2C337D7AC3FC6FBFC1B4F /* UITableView+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CF928144F4D7D86651D1D8 /* UITableView+DVALib.h */; };
+		0D8E687A4F67D4ABB82AE172 /* DVACategories.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB807AA56DF4803AC6BAFC5 /* DVACategories.h */; };
+		0E78F1F51D2CE8EF6916B420 /* CAGradientLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 94742014676304D875892082 /* CAGradientLayer+DVALib.h */; };
+		0E98C77E738BDA2C530C7977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28CED7CB1C3C8303F87C94 /* Foundation.framework */; };
+		102638B9E31F17051B470DD9 /* NSString+DVAValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9FA4FD9575904D55F8C5F /* NSString+DVAValidator.m */; };
+		116F134C09632AE2543AA225 /* UITableView+DVACellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 202698FE6959E6612C8845B4 /* UITableView+DVACellHeight.m */; };
+		15EF702FBFC01D5376FCC4BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BA0F5922DA9FBBFEDDA5CA /* UIKit.framework */; };
+		18839BAB99C089D34B29A893 /* NSAttributedString+DVASize.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DE7597A958A992D6D41A7D /* NSAttributedString+DVASize.m */; };
+		1BBBDE833AD187331249394B /* UIColor+DVAhex.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BB51413F5BDA6E62E59554 /* UIColor+DVAhex.m */; };
+		1C36B679DF33A235D38F7986 /* CAShapeLayer+DVARound.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DCF29D056A19CEC2E23DC7 /* CAShapeLayer+DVARound.h */; };
+		2C11EF8281777E6FE6D85598 /* UITableView+DVACellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 6095877F317C6F5226D65931 /* UITableView+DVACellHeight.h */; };
+		31FCD0733A226E0EC49F8596 /* DVACategories.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB807AA56DF4803AC6BAFC5 /* DVACategories.h */; };
+		33EA4B3B8A208BD2EC426866 /* CAShapeLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = C10C1D7198F411451EE0A77F /* CAShapeLayer+DVALib.h */; };
+		3629FADE63E80AF7B0FFE245 /* NSString+DVAValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 418248759729D9C134C8974B /* NSString+DVAValidator.h */; };
+		3871A41BB9B58BF3CDF5846A /* NSAttributedString+DVASize.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DE7597A958A992D6D41A7D /* NSAttributedString+DVASize.m */; };
+		3971F7A08B63D3DC13A00A07 /* NSString+DVASecure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0531A71B31FE46CAB12901 /* NSString+DVASecure.m */; };
+		3C578EFDFC8BB07BE4831377 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28CED7CB1C3C8303F87C94 /* Foundation.framework */; };
+		478713487EB4970FAE2A8CD5 /* UITableView+DVACellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 202698FE6959E6612C8845B4 /* UITableView+DVACellHeight.m */; };
+		4A6CE497A8C3DFA51FB5043B /* NSString+DVAValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 418248759729D9C134C8974B /* NSString+DVAValidator.h */; };
+		4E82E0A6E6C7612F15A1278C /* CAGradientLayer+DVAGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = AE3A9E7F8C34258EA8B14A8F /* CAGradientLayer+DVAGradient.h */; };
+		51B431852362770EEBA0077E /* UITableView+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CF928144F4D7D86651D1D8 /* UITableView+DVALib.h */; };
+		51EA9F837641EAE41934B1B6 /* UIColor+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 928308F9EF11746390399B6F /* UIColor+DVALib.h */; };
+		547E91174CB33A069C3FB968 /* UIColor+DVAhex.h in Headers */ = {isa = PBXBuildFile; fileRef = D51579BA164DE76E08234A5B /* UIColor+DVAhex.h */; };
+		54CE5FDE16A9070D79512B28 /* Pods-Tests-DVACategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E2D682D5A969D5CE1F357 /* Pods-Tests-DVACategories-dummy.m */; };
+		5A837906FF3B87804A2D9EA2 /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AED98842ED4B532DE5EA654B /* UICollectionViewCell+DVAReusableCollectionCell.h */; };
+		5BF978DCEA42D1423B8FC16B /* UITableView+DVACellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 6095877F317C6F5226D65931 /* UITableView+DVACellHeight.h */; };
+		687EF3111A4D87E1B3FD9387 /* NSAttributedString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CB49532E115AAD2DC445DB /* NSAttributedString+DVALib.h */; };
+		6CAD8FBB40105D482E203514 /* NSString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 29326624E061D93C5C8AC69C /* NSString+DVALib.h */; };
+		772CA8AADA537938138D9658 /* NSString+DVAValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9FA4FD9575904D55F8C5F /* NSString+DVAValidator.m */; };
+		80E284B3E82243359314A037 /* NSString+DVASecure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0531A71B31FE46CAB12901 /* NSString+DVASecure.m */; };
+		80F48AA874AFF5DE4A96CA6B /* UICollectionViewCell+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ADE2C9D73254C5E69A5A58 /* UICollectionViewCell+DVALib.h */; };
+		815E765DB095F89C7942CBFC /* UIColor+DVAhex.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BB51413F5BDA6E62E59554 /* UIColor+DVAhex.m */; };
+		8561C4365960ACCCFB622766 /* CAGradientLayer+DVAGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4CE562009893463A98A385 /* CAGradientLayer+DVAGradient.m */; };
+		8B0BA809348945792000A2BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B1FF238E82FB1BD5EA0B46 /* QuartzCore.framework */; };
+		8F2F7BBC873D057E4E970DD6 /* CAShapeLayer+DVADashedBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 955AE3106CD5E4CDD167F78B /* CAShapeLayer+DVADashedBorder.h */; };
+		90C29A40FB8E10765BCC4185 /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A9A37AD5B5E182A36BCDD /* UICollectionViewCell+DVAReusableCollectionCell.m */; };
+		92008F33931E67B565B96469 /* CAShapeLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = C10C1D7198F411451EE0A77F /* CAShapeLayer+DVALib.h */; };
+		94D4EE708ED483589FE1A309 /* CAGradientLayer+DVAGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = AE3A9E7F8C34258EA8B14A8F /* CAGradientLayer+DVAGradient.h */; };
+		97A8C191C3582666A0A7C529 /* CAShapeLayer+DVADashedBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 955AE3106CD5E4CDD167F78B /* CAShapeLayer+DVADashedBorder.h */; };
+		A03E402BFE9D05127764BD84 /* CAShapeLayer+DVARound.m in Sources */ = {isa = PBXBuildFile; fileRef = 863CEF57A6E0D049E707D40E /* CAShapeLayer+DVARound.m */; };
+		A208AD4BEC5F62E4FF9D1199 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BA0F5922DA9FBBFEDDA5CA /* UIKit.framework */; };
+		B46EDA54CF05ABD1D2F17074 /* NSAttributedString+DVASize.h in Headers */ = {isa = PBXBuildFile; fileRef = A238ECEE036AE87F3DC692D0 /* NSAttributedString+DVASize.h */; };
+		BDB30566599DE583BB6866AC /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5A9A37AD5B5E182A36BCDD /* UICollectionViewCell+DVAReusableCollectionCell.m */; };
+		BF8F43968D8CA547C99EF4C6 /* Pods-DVACategories-DVACategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9DD12D2E977123BB99B849 /* Pods-DVACategories-DVACategories-dummy.m */; };
+		C1B76BEA920A9A9744D4F3C2 /* CAShapeLayer+DVARound.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DCF29D056A19CEC2E23DC7 /* CAShapeLayer+DVARound.h */; };
+		C23741EE6D7EF6FF312C0ECF /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B65D64E17DFD0B1E3D1ACC /* Pods-Tests-dummy.m */; };
+		C2E3D6B5926CB28D8B8A9542 /* NSAttributedString+DVASize.h in Headers */ = {isa = PBXBuildFile; fileRef = A238ECEE036AE87F3DC692D0 /* NSAttributedString+DVASize.h */; };
+		CAB06DEE51BBF1056AC0D12D /* NSAttributedString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = E0CB49532E115AAD2DC445DB /* NSAttributedString+DVALib.h */; };
+		CE87939DAC3A3DCD75D2059E /* Pods-DVACategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63E77F775B4F4F53426D37D /* Pods-DVACategories-dummy.m */; };
+		D1A98B957140563B653991AD /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AED98842ED4B532DE5EA654B /* UICollectionViewCell+DVAReusableCollectionCell.h */; };
+		D5A98E7C4C603718BE97E6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28CED7CB1C3C8303F87C94 /* Foundation.framework */; };
+		D64B6B616FF2ADFE2C3EE0FC /* UIColor+DVAhex.h in Headers */ = {isa = PBXBuildFile; fileRef = D51579BA164DE76E08234A5B /* UIColor+DVAhex.h */; };
+		DB160AA6B9EE8323F5C287D0 /* UICollectionViewCell+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ADE2C9D73254C5E69A5A58 /* UICollectionViewCell+DVALib.h */; };
+		DF891450957A09F2854C6F20 /* UIColor+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 928308F9EF11746390399B6F /* UIColor+DVALib.h */; };
+		E17868F391A39BFCCB6325A0 /* CAGradientLayer+DVAGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4CE562009893463A98A385 /* CAGradientLayer+DVAGradient.m */; };
+		E2AA345EAE67357E1F0A7BC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B1FF238E82FB1BD5EA0B46 /* QuartzCore.framework */; };
+		E3426CE1A81E8FE8E03C7C97 /* NSString+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 29326624E061D93C5C8AC69C /* NSString+DVALib.h */; };
+		EC59F19C9678F9806617767A /* NSString+DVASecure.h in Headers */ = {isa = PBXBuildFile; fileRef = 412C40A03C9CE76969CEBEA8 /* NSString+DVASecure.h */; };
+		EE4F007E3DC0E9BE8EFEE053 /* CAShapeLayer+DVADashedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E664DC5C82C4826D66F5D /* CAShapeLayer+DVADashedBorder.m */; };
+		F1DF6BC5CAA54EF7D1E42AB7 /* NSString+DVASecure.h in Headers */ = {isa = PBXBuildFile; fileRef = 412C40A03C9CE76969CEBEA8 /* NSString+DVASecure.h */; };
+		F1F135BC1FA5F531E496827C /* CAShapeLayer+DVARound.m in Sources */ = {isa = PBXBuildFile; fileRef = 863CEF57A6E0D049E707D40E /* CAShapeLayer+DVARound.m */; };
+		F3C6F73AE2499FFC5C402613 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28CED7CB1C3C8303F87C94 /* Foundation.framework */; };
+		F51FA5FCBA359AEE5834EE3A /* CAGradientLayer+DVALib.h in Headers */ = {isa = PBXBuildFile; fileRef = 94742014676304D875892082 /* CAGradientLayer+DVALib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		295F772CB2748E36958C5E3B /* PBXContainerItemProxy */ = {
+		C456C3D034573773C80CD4FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CEFD6407A559274E197C9F42 /* Project object */;
+			containerPortal = 76F0C29E4C88BC3A34C13696 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 879924C492F728E0271DF75C;
+			remoteGlobalIDString = 32B7E4D1321002D3DD709704;
 			remoteInfo = "Pods-Tests-DVACategories";
 		};
-		5403CD5CBF6CE84DAD8E955F /* PBXContainerItemProxy */ = {
+		EA5900D4696389C76C62A7AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CEFD6407A559274E197C9F42 /* Project object */;
+			containerPortal = 76F0C29E4C88BC3A34C13696 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 30BBEE971784F481454A2649;
+			remoteGlobalIDString = AC63BB16584E270DC0F7480E;
 			remoteInfo = "Pods-DVACategories-DVACategories";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0259CBE0046CEB22CE13D42D /* Pods-DVACategories-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DVACategories-resources.sh"; sourceTree = "<group>"; };
-		026EDF3130097B1D76A0B736 /* libPods-Tests-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		070F5B50A1B8CCDA6A5E26F0 /* Pods-DVACategories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories.release.xcconfig"; sourceTree = "<group>"; };
-		07FE911B9ADD3AA0069ACE16 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		09CBFC3CE7DA999DE1CC813F /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0A0C014A29B88EE2077DE37F /* CAShapeLayer+DVADashedBorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+DVADashedBorder.h"; sourceTree = "<group>"; };
-		0AFD979651617A308C264034 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0FE9A230A649DE70B40052EA /* CAShapeLayer+DVADashedBorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+DVADashedBorder.m"; sourceTree = "<group>"; };
-		12D96C15B5CEA21FB77747BB /* Pods-DVACategories-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DVACategories-acknowledgements.plist"; sourceTree = "<group>"; };
-		17A817934DCF3D62A95E489F /* NSString+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+DVALib.h"; sourceTree = "<group>"; };
-		1A50674852E23FDD02573A9F /* CAShapeLayer+DVARound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+DVARound.h"; sourceTree = "<group>"; };
-		22277AA255D45A6C32F54602 /* Pods-DVACategories-DVACategories.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories-DVACategories.xcconfig"; sourceTree = "<group>"; };
-		2542FB1F1958CD40637BE201 /* CAGradientLayer+DVAGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+DVAGradient.h"; sourceTree = "<group>"; };
-		2E2ADA577A96C9179505E230 /* CAGradientLayer+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+DVALib.h"; sourceTree = "<group>"; };
-		2F847F885409331D68F67EBA /* UIColor+DVAhex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+DVAhex.h"; sourceTree = "<group>"; };
-		301A8304B387213154BFC6D9 /* UITableView+DVACellHeight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DVACellHeight.m"; sourceTree = "<group>"; };
-		3554A6FF09D1F078802D8FDB /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		366DFFA09D05F78624ED8B2C /* Pods-DVACategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVACategories-dummy.m"; sourceTree = "<group>"; };
-		369229642F01CE975011AD95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3E196C70C0A010F7064F1E1A /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		46F401AEDC2C539E496B954A /* Pods-DVACategories-DVACategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVACategories-DVACategories-dummy.m"; sourceTree = "<group>"; };
-		50C137F7DB84731616BFFCDE /* UITableView+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DVALib.h"; sourceTree = "<group>"; };
-		552F969B21699B7487132529 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		588E82842844D3548A9F08F0 /* DVACategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVACategories.h; sourceTree = "<group>"; };
-		59BC1FE7EC58CBED5451219E /* Pods-DVACategories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories.debug.xcconfig"; sourceTree = "<group>"; };
-		5E3053604CC853D2CF2E624F /* libPods-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60D453C46A15BD3433112AB4 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A3D37325F386B63E81F5ACD /* Pods-Tests-DVACategories.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVACategories.xcconfig"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories.xcconfig"; sourceTree = "<group>"; };
-		7024B1BBC3B65C9948BE05DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7CB46B8BB93175FCDACF2526 /* NSAttributedString+DVASize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DVASize.m"; sourceTree = "<group>"; };
-		87DDF5C527B8AA81AC81C6C0 /* UIColor+DVAhex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DVAhex.m"; sourceTree = "<group>"; };
-		8935880DE4DAF65A4ABFE014 /* UICollectionViewCell+DVAReusableCollectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+DVAReusableCollectionCell.m"; sourceTree = "<group>"; };
-		8C1534E90E93315759ECB214 /* libPods-DVACategories-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVACategories-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		92BADB9A23AAA59D6C47301D /* CAGradientLayer+DVAGradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+DVAGradient.m"; sourceTree = "<group>"; };
-		9BBB92DA57690A7CF5D6EB18 /* UICollectionViewCell+DVAReusableCollectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+DVAReusableCollectionCell.h"; sourceTree = "<group>"; };
-		A0E8698D3622D2DC7C8D1973 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A116F4C98BD2147857E50FAF /* Pods-DVACategories-DVACategories-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVACategories-DVACategories-prefix.pch"; sourceTree = "<group>"; };
-		A7914982B0046A076FD85DD1 /* UICollectionViewCell+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+DVALib.h"; sourceTree = "<group>"; };
-		A9DE422E849D6C41488EF083 /* UITableView+DVACellHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DVACellHeight.h"; sourceTree = "<group>"; };
-		ABB51DCB018966B49C4D5702 /* Pods-Tests-DVACategories-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-DVACategories-prefix.pch"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories-prefix.pch"; sourceTree = "<group>"; };
-		B5C62B1B67F3AE281CC90CDD /* Pods-DVACategories-DVACategories-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories-DVACategories-Private.xcconfig"; sourceTree = "<group>"; };
-		B619A7F91329B313FAF50C0F /* CAShapeLayer+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+DVALib.h"; sourceTree = "<group>"; };
-		B7BD62C889A7A0CF03C79F6C /* NSAttributedString+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DVALib.h"; sourceTree = "<group>"; };
-		BA80BCC9D568ECD065FE7C6B /* NSString+DVAValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+DVAValidator.m"; sourceTree = "<group>"; };
-		BD79DEB449E21C4C6E429FFC /* Pods-Tests-DVACategories-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVACategories-Private.xcconfig"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories-Private.xcconfig"; sourceTree = "<group>"; };
-		BFF736930B18C17AEE77FADD /* UIColor+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+DVALib.h"; sourceTree = "<group>"; };
-		BFFDF7EF3B835712B61D11D0 /* Pods-Tests-DVACategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-DVACategories-dummy.m"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories-dummy.m"; sourceTree = "<group>"; };
-		C225ECB42FEAFF978C88E91C /* NSString+DVAValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+DVAValidator.h"; sourceTree = "<group>"; };
-		DA62BA78F6E48DAADA6150B5 /* CAShapeLayer+DVARound.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+DVARound.m"; sourceTree = "<group>"; };
-		E5B59720357F6CA38B25C9F2 /* Pods-DVACategories-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DVACategories-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E8B1C1EE8D66DABF3983D144 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EF8E18F277CE4E556DC746C3 /* Pods-DVACategories-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVACategories-environment.h"; sourceTree = "<group>"; };
-		FD5F98FA47563265E4FE4CC8 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		FEAC5B5871BEBEFAF0AE8F7D /* NSAttributedString+DVASize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DVASize.h"; sourceTree = "<group>"; };
+		057F36D854CF836FAEBDB20D /* Pods-DVACategories-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DVACategories-resources.sh"; sourceTree = "<group>"; };
+		05ADE2C9D73254C5E69A5A58 /* UICollectionViewCell+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+DVALib.h"; sourceTree = "<group>"; };
+		0BF8CA735EF855BC6B168843 /* Pods-DVACategories-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DVACategories-acknowledgements.plist"; sourceTree = "<group>"; };
+		177F7E315F85B8791E238E11 /* Pods-Tests-DVACategories-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVACategories-Private.xcconfig"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories-Private.xcconfig"; sourceTree = "<group>"; };
+		202698FE6959E6612C8845B4 /* UITableView+DVACellHeight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DVACellHeight.m"; sourceTree = "<group>"; };
+		219CF7B8AB8A0D6105A10277 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29326624E061D93C5C8AC69C /* NSString+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+DVALib.h"; sourceTree = "<group>"; };
+		2B1E664DC5C82C4826D66F5D /* CAShapeLayer+DVADashedBorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+DVADashedBorder.m"; sourceTree = "<group>"; };
+		321119B8027108B3F7BE334D /* Pods-Tests-DVACategories.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVACategories.xcconfig"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories.xcconfig"; sourceTree = "<group>"; };
+		3DD03F9EBA6F88C5640543FA /* Pods-DVACategories-DVACategories.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories-DVACategories.xcconfig"; sourceTree = "<group>"; };
+		404573999A4E071EE129B786 /* Pods-DVACategories-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DVACategories-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40B65D64E17DFD0B1E3D1ACC /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		412C40A03C9CE76969CEBEA8 /* NSString+DVASecure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+DVASecure.h"; sourceTree = "<group>"; };
+		418248759729D9C134C8974B /* NSString+DVAValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+DVAValidator.h"; sourceTree = "<group>"; };
+		47DE7597A958A992D6D41A7D /* NSAttributedString+DVASize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DVASize.m"; sourceTree = "<group>"; };
+		5B2E2D682D5A969D5CE1F357 /* Pods-Tests-DVACategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-DVACategories-dummy.m"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories-dummy.m"; sourceTree = "<group>"; };
+		5E7A286F251D0794ED22D7BE /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		6095877F317C6F5226D65931 /* UITableView+DVACellHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DVACellHeight.h"; sourceTree = "<group>"; };
+		6337C09B6FD53F27A876A37F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		63B1FF238E82FB1BD5EA0B46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		73BB51413F5BDA6E62E59554 /* UIColor+DVAhex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DVAhex.m"; sourceTree = "<group>"; };
+		77BA0F5922DA9FBBFEDDA5CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		80154F6B26ADDE8A055E91AD /* Pods-DVACategories-DVACategories-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVACategories-DVACategories-prefix.pch"; sourceTree = "<group>"; };
+		8192F1A5C11F2B17518050E6 /* libPods-Tests-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B763384AACAE2F54CD98F9 /* libPods-DVACategories-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVACategories-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		863CEF57A6E0D049E707D40E /* CAShapeLayer+DVARound.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+DVARound.m"; sourceTree = "<group>"; };
+		8D239578CD42E37D1710D9D2 /* Pods-Tests-DVACategories-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-DVACategories-prefix.pch"; path = "../Pods-Tests-DVACategories/Pods-Tests-DVACategories-prefix.pch"; sourceTree = "<group>"; };
+		8E7FBB787D22B48D8E369E90 /* Pods-DVACategories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories.debug.xcconfig"; sourceTree = "<group>"; };
+		928308F9EF11746390399B6F /* UIColor+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+DVALib.h"; sourceTree = "<group>"; };
+		94742014676304D875892082 /* CAGradientLayer+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+DVALib.h"; sourceTree = "<group>"; };
+		955AE3106CD5E4CDD167F78B /* CAShapeLayer+DVADashedBorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+DVADashedBorder.h"; sourceTree = "<group>"; };
+		9A0531A71B31FE46CAB12901 /* NSString+DVASecure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+DVASecure.m"; sourceTree = "<group>"; };
+		A238ECEE036AE87F3DC692D0 /* NSAttributedString+DVASize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DVASize.h"; sourceTree = "<group>"; };
+		A83F1D0D4DAB7C68C4269A75 /* Pods-DVACategories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories.release.xcconfig"; sourceTree = "<group>"; };
+		AE3A9E7F8C34258EA8B14A8F /* CAGradientLayer+DVAGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+DVAGradient.h"; sourceTree = "<group>"; };
+		AED98842ED4B532DE5EA654B /* UICollectionViewCell+DVAReusableCollectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+DVAReusableCollectionCell.h"; sourceTree = "<group>"; };
+		B1DCF29D056A19CEC2E23DC7 /* CAShapeLayer+DVARound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+DVARound.h"; sourceTree = "<group>"; };
+		B2450289C3BA80735FBA4547 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		B2B97254FD5D8C09EADA0813 /* Pods-DVACategories-DVACategories-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVACategories-DVACategories-Private.xcconfig"; sourceTree = "<group>"; };
+		BF55A51C14201B44B67721E5 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C10C1D7198F411451EE0A77F /* CAShapeLayer+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+DVALib.h"; sourceTree = "<group>"; };
+		C9E9FA4FD9575904D55F8C5F /* NSString+DVAValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+DVAValidator.m"; sourceTree = "<group>"; };
+		D51579BA164DE76E08234A5B /* UIColor+DVAhex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+DVAhex.h"; sourceTree = "<group>"; };
+		DA5A9A37AD5B5E182A36BCDD /* UICollectionViewCell+DVAReusableCollectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+DVAReusableCollectionCell.m"; sourceTree = "<group>"; };
+		DD28CED7CB1C3C8303F87C94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E0CB49532E115AAD2DC445DB /* NSAttributedString+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DVALib.h"; sourceTree = "<group>"; };
+		E52B353C8336F47593CB9118 /* libPods-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFC11DC1565F6B1AD17AA27 /* Pods-DVACategories-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVACategories-environment.h"; sourceTree = "<group>"; };
+		ED58457758524EFC8D00F870 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9DD12D2E977123BB99B849 /* Pods-DVACategories-DVACategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVACategories-DVACategories-dummy.m"; sourceTree = "<group>"; };
+		EFB807AA56DF4803AC6BAFC5 /* DVACategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVACategories.h; sourceTree = "<group>"; };
+		F09C7860EFB6BBD0FE00B824 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3CF928144F4D7D86651D1D8 /* UITableView+DVALib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DVALib.h"; sourceTree = "<group>"; };
+		F5A8C0BFD20D758B42A0D43C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F63E77F775B4F4F53426D37D /* Pods-DVACategories-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVACategories-dummy.m"; sourceTree = "<group>"; };
+		FD4CE562009893463A98A385 /* CAGradientLayer+DVAGradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+DVAGradient.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07CD936AA3931E25B94060A0 /* Frameworks */ = {
+		0AB8B89D81CA2C210DF9D8F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A82DF19664CD0FB8247731 /* Foundation.framework in Frameworks */,
-				9077EE4E475C449886585763 /* QuartzCore.framework in Frameworks */,
-				9581643EA7B5BAD036DE29AC /* UIKit.framework in Frameworks */,
+				0E98C77E738BDA2C530C7977 /* Foundation.framework in Frameworks */,
+				E2AA345EAE67357E1F0A7BC9 /* QuartzCore.framework in Frameworks */,
+				15EF702FBFC01D5376FCC4BB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08948C4F8C2CCAF4FE4CB244 /* Frameworks */ = {
+		27B719FE6538A50F98CA04A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0867D78AB4BE19A705C9C08E /* Foundation.framework in Frameworks */,
-				9459A553F55D8D78A5DD8FA8 /* QuartzCore.framework in Frameworks */,
-				19673FD5AF60217CC70511A9 /* UIKit.framework in Frameworks */,
+				3C578EFDFC8BB07BE4831377 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		221911B7C84A4901A5E96405 /* Frameworks */ = {
+		E7755A9BB5EE2794E8633396 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A459B6C71376C4D0904F602A /* Foundation.framework in Frameworks */,
+				D5A98E7C4C603718BE97E6BD /* Foundation.framework in Frameworks */,
+				8B0BA809348945792000A2BF /* QuartzCore.framework in Frameworks */,
+				A208AD4BEC5F62E4FF9D1199 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54728AACD18953A2F650C0A8 /* Frameworks */ = {
+		FC3058F63BD7FC8C4301DD27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0E2674CDD7187EE37C8295 /* Foundation.framework in Frameworks */,
+				F3C6F73AE2499FFC5C402613 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0006648503A9E733777810A1 /* Pod */ = {
+		068DD41094A74E88DD7CFA72 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				82462D30AEF238342D8D09D6 /* Classes */,
+				69A8351DC1B9437280FA28E5 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		00829F8EDC94AFB422F2DF32 /* Classes */ = {
+		07C3FF5CC5B7953C3BB0FB12 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EC30A1A96E37C8C50BD268B2 /* NSString */,
+				6BFB462E08FDEC6F44D4D5B9 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		08B53F5FB17CF8AE91FD9CB5 /* NSAttributtedString */ = {
+			isa = PBXGroup;
+			children = (
+				E0CB49532E115AAD2DC445DB /* NSAttributedString+DVALib.h */,
+				A238ECEE036AE87F3DC692D0 /* NSAttributedString+DVASize.h */,
+				47DE7597A958A992D6D41A7D /* NSAttributedString+DVASize.m */,
+			);
+			path = NSAttributtedString;
+			sourceTree = "<group>";
+		};
+		08D91A5C8B82E52455EA894C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35FDFA55033377232AF2CBE6 /* Core */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		1570A88831D97F3A6823D7AF /* Pods-DVACategories */ = {
+		0F8C970CDBA7E928D139D437 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E5B59720357F6CA38B25C9F2 /* Pods-DVACategories-acknowledgements.markdown */,
-				12D96C15B5CEA21FB77747BB /* Pods-DVACategories-acknowledgements.plist */,
-				366DFFA09D05F78624ED8B2C /* Pods-DVACategories-dummy.m */,
-				EF8E18F277CE4E556DC746C3 /* Pods-DVACategories-environment.h */,
-				0259CBE0046CEB22CE13D42D /* Pods-DVACategories-resources.sh */,
-				59BC1FE7EC58CBED5451219E /* Pods-DVACategories.debug.xcconfig */,
-				070F5B50A1B8CCDA6A5E26F0 /* Pods-DVACategories.release.xcconfig */,
+				FFDDCC3FCD6266B492CAB236 /* Classes */,
 			);
-			name = "Pods-DVACategories";
-			path = "Target Support Files/Pods-DVACategories";
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		19B091547F00763C94B66218 /* UITableView */ = {
+		1DDF4CE12F5FD9109DF9A5AA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A9DE422E849D6C41488EF083 /* UITableView+DVACellHeight.h */,
-				301A8304B387213154BFC6D9 /* UITableView+DVACellHeight.m */,
-				50C137F7DB84731616BFFCDE /* UITableView+DVALib.h */,
+				F7A341ABC5102E9C0F10BE2F /* UICollectionViewCell */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F05022B669FB7EA67F184D0 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				6095877F317C6F5226D65931 /* UITableView+DVACellHeight.h */,
+				202698FE6959E6612C8845B4 /* UITableView+DVACellHeight.m */,
+				F3CF928144F4D7D86651D1D8 /* UITableView+DVALib.h */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
 		};
-		1A9E79A280F640038FD5FA2A /* UIColor */ = {
+		25095AF63478A030C9C7062C /* DVACategories */ = {
 			isa = PBXGroup;
 			children = (
-				BFF736930B18C17AEE77FADD /* UIColor+DVALib.h */,
-				2F847F885409331D68F67EBA /* UIColor+DVAhex.h */,
-				87DDF5C527B8AA81AC81C6C0 /* UIColor+DVAhex.m */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
-		3067256BBA0ECCA0C3CC4347 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E5B3B957DBA654A5C5DA1D99 /* CAShapeLayer */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		37E46438F3C9BD8466C888CA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				7024B1BBC3B65C9948BE05DF /* Foundation.framework */,
-				369229642F01CE975011AD95 /* QuartzCore.framework */,
-				552F969B21699B7487132529 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		389738B525F25103489A2203 /* UICollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				D08BD874BB3F643A6A240EF7 /* Pod */,
-			);
-			name = UICollectionViewCell;
-			sourceTree = "<group>";
-		};
-		3BBB70101A9DAE93E3D42237 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				00829F8EDC94AFB422F2DF32 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		3EA91DE966ED5F1D850AE4F6 /* UITableView */ = {
-			isa = PBXGroup;
-			children = (
-				A0620A698C616B4A4DCDF36E /* Pod */,
-			);
-			name = UITableView;
-			sourceTree = "<group>";
-		};
-		3ED5074E744369FC0813AB62 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5895B470886CC388BFDFF5E7 /* DVACategories */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		40BA7EEC4EFA78D521C780FB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E314DD08282619A50CEC36BA /* CAGradientLayer */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		42466C3F659B323AE99DF99C /* UICollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				A7914982B0046A076FD85DD1 /* UICollectionViewCell+DVALib.h */,
-				9BBB92DA57690A7CF5D6EB18 /* UICollectionViewCell+DVAReusableCollectionCell.h */,
-				8935880DE4DAF65A4ABFE014 /* UICollectionViewCell+DVAReusableCollectionCell.m */,
-			);
-			path = UICollectionViewCell;
-			sourceTree = "<group>";
-		};
-		45F7A6E8E71A8C47F982865A = {
-			isa = PBXGroup;
-			children = (
-				E8B1C1EE8D66DABF3983D144 /* Podfile */,
-				3ED5074E744369FC0813AB62 /* Development Pods */,
-				7D8DC03057F2F04C69C4C174 /* Frameworks */,
-				BB0841A1BBB1778C3CAC99FE /* Products */,
-				9ACF65E6A299E3AD35C13704 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		47049F50ABE9BD0C8C579414 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F07128D969C7DF14AD27058B /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		492238B307860523E7A12883 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EE863934DAB3FD4CEC1302CC /* NSAttributtedString */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		579380B8796F637FBB8EA134 /* CAGradientLayer */ = {
-			isa = PBXGroup;
-			children = (
-				7FC5E35F20D87A0B54ED6993 /* Pod */,
-			);
-			name = CAGradientLayer;
-			sourceTree = "<group>";
-		};
-		5895B470886CC388BFDFF5E7 /* DVACategories */ = {
-			isa = PBXGroup;
-			children = (
-				579380B8796F637FBB8EA134 /* CAGradientLayer */,
-				6357FB785332EA09EA297CE3 /* CAShapeLayer */,
-				7480FED8F2A543A681562D28 /* Core */,
-				AD1100B8804267FA0ACE5689 /* NSAttributedString */,
-				6AE57FCF805192EE968B3A4F /* NSString */,
-				D43CABEF9CE16FE70F6BCD4B /* Support Files */,
-				389738B525F25103489A2203 /* UICollectionViewCell */,
-				CE28D53364CAA7B719FA2537 /* UIColor */,
-				3EA91DE966ED5F1D850AE4F6 /* UITableView */,
+				5C9A8B40731F80FBDF0904B5 /* CAGradientLayer */,
+				58BFCE2124C517EC8C064D88 /* CAShapeLayer */,
+				769D2035F0E5FE7A8495A913 /* Core */,
+				B1D4D30DE8AC912302FA5BCA /* NSAttributedString */,
+				A6EC24E1E017998D3B38FD6B /* NSString */,
+				E066A257D83D3E5A5BE85519 /* Support Files */,
+				896BB4B36FAE644C752BF7A0 /* UICollectionViewCell */,
+				3FF36BE0F50FDB5537C49443 /* UIColor */,
+				5D8252DDB219F6E6FE45FE78 /* UITableView */,
 			);
 			name = DVACategories;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		6357FB785332EA09EA297CE3 /* CAShapeLayer */ = {
+		253AB56ADEC2F5A5BFF088AF /* Pods-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6A478548724955284B909B1E /* Pod */,
-			);
-			name = CAShapeLayer;
-			sourceTree = "<group>";
-		};
-		6A478548724955284B909B1E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3067256BBA0ECCA0C3CC4347 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		6AE57FCF805192EE968B3A4F /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				3BBB70101A9DAE93E3D42237 /* Pod */,
-			);
-			name = NSString;
-			sourceTree = "<group>";
-		};
-		6AFBA9699EEED6EE6FD4F4EA /* Pods-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0AFD979651617A308C264034 /* Pods-Tests-acknowledgements.markdown */,
-				09CBFC3CE7DA999DE1CC813F /* Pods-Tests-acknowledgements.plist */,
-				3554A6FF09D1F078802D8FDB /* Pods-Tests-dummy.m */,
-				FD5F98FA47563265E4FE4CC8 /* Pods-Tests-environment.h */,
-				3E196C70C0A010F7064F1E1A /* Pods-Tests-resources.sh */,
-				A0E8698D3622D2DC7C8D1973 /* Pods-Tests.debug.xcconfig */,
-				07FE911B9ADD3AA0069ACE16 /* Pods-Tests.release.xcconfig */,
+				219CF7B8AB8A0D6105A10277 /* Pods-Tests-acknowledgements.markdown */,
+				F09C7860EFB6BBD0FE00B824 /* Pods-Tests-acknowledgements.plist */,
+				40B65D64E17DFD0B1E3D1ACC /* Pods-Tests-dummy.m */,
+				B2450289C3BA80735FBA4547 /* Pods-Tests-environment.h */,
+				5E7A286F251D0794ED22D7BE /* Pods-Tests-resources.sh */,
+				6337C09B6FD53F27A876A37F /* Pods-Tests.debug.xcconfig */,
+				BF55A51C14201B44B67721E5 /* Pods-Tests.release.xcconfig */,
 			);
 			name = "Pods-Tests";
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
-		6E99D3CA6AD77C5A8B6C435A /* Core */ = {
+		35FDFA55033377232AF2CBE6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				588E82842844D3548A9F08F0 /* DVACategories.h */,
+				EFB807AA56DF4803AC6BAFC5 /* DVACategories.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		7480FED8F2A543A681562D28 /* Core */ = {
+		3ABC0DA4CCCDC2CF1DCFA77E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0006648503A9E733777810A1 /* Pod */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		7D8DC03057F2F04C69C4C174 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				37E46438F3C9BD8466C888CA /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7FC5E35F20D87A0B54ED6993 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				40BA7EEC4EFA78D521C780FB /* Classes */,
+				9BC2C0ACB7910227314BAD19 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		82462D30AEF238342D8D09D6 /* Classes */ = {
+		3FF36BE0F50FDB5537C49443 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				6E99D3CA6AD77C5A8B6C435A /* Core */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		991CB432FE7E12316076742B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				42466C3F659B323AE99DF99C /* UICollectionViewCell */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		9ACF65E6A299E3AD35C13704 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1570A88831D97F3A6823D7AF /* Pods-DVACategories */,
-				6AFBA9699EEED6EE6FD4F4EA /* Pods-Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9E714E1666951FBDFD2EFF1B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				492238B307860523E7A12883 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		A0620A698C616B4A4DCDF36E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E901607A2C8BCCCF1FC3C08A /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		AD1100B8804267FA0ACE5689 /* NSAttributedString */ = {
-			isa = PBXGroup;
-			children = (
-				9E714E1666951FBDFD2EFF1B /* Pod */,
-			);
-			name = NSAttributedString;
-			sourceTree = "<group>";
-		};
-		BB0841A1BBB1778C3CAC99FE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5E3053604CC853D2CF2E624F /* libPods-DVACategories.a */,
-				8C1534E90E93315759ECB214 /* libPods-DVACategories-DVACategories.a */,
-				60D453C46A15BD3433112AB4 /* libPods-Tests.a */,
-				026EDF3130097B1D76A0B736 /* libPods-Tests-DVACategories.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CE28D53364CAA7B719FA2537 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				47049F50ABE9BD0C8C579414 /* Pod */,
+				459DBD4660B792FE1DEFBF80 /* Pod */,
 			);
 			name = UIColor;
 			sourceTree = "<group>";
 		};
-		D08BD874BB3F643A6A240EF7 /* Pod */ = {
+		4191133F31547790A161AD7D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				991CB432FE7E12316076742B /* Classes */,
+				591E4CDA1A9CE35FAEFC2534 /* UIColor */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4259052EA8CBEEDBF2BD5D68 /* Pods-DVACategories */ = {
+			isa = PBXGroup;
+			children = (
+				404573999A4E071EE129B786 /* Pods-DVACategories-acknowledgements.markdown */,
+				0BF8CA735EF855BC6B168843 /* Pods-DVACategories-acknowledgements.plist */,
+				F63E77F775B4F4F53426D37D /* Pods-DVACategories-dummy.m */,
+				EBFC11DC1565F6B1AD17AA27 /* Pods-DVACategories-environment.h */,
+				057F36D854CF836FAEBDB20D /* Pods-DVACategories-resources.sh */,
+				8E7FBB787D22B48D8E369E90 /* Pods-DVACategories.debug.xcconfig */,
+				A83F1D0D4DAB7C68C4269A75 /* Pods-DVACategories.release.xcconfig */,
+			);
+			name = "Pods-DVACategories";
+			path = "Target Support Files/Pods-DVACategories";
+			sourceTree = "<group>";
+		};
+		459DBD4660B792FE1DEFBF80 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4191133F31547790A161AD7D /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		D43CABEF9CE16FE70F6BCD4B /* Support Files */ = {
+		58BFCE2124C517EC8C064D88 /* CAShapeLayer */ = {
 			isa = PBXGroup;
 			children = (
-				22277AA255D45A6C32F54602 /* Pods-DVACategories-DVACategories.xcconfig */,
-				B5C62B1B67F3AE281CC90CDD /* Pods-DVACategories-DVACategories-Private.xcconfig */,
-				46F401AEDC2C539E496B954A /* Pods-DVACategories-DVACategories-dummy.m */,
-				A116F4C98BD2147857E50FAF /* Pods-DVACategories-DVACategories-prefix.pch */,
-				6A3D37325F386B63E81F5ACD /* Pods-Tests-DVACategories.xcconfig */,
-				BD79DEB449E21C4C6E429FFC /* Pods-Tests-DVACategories-Private.xcconfig */,
-				BFFDF7EF3B835712B61D11D0 /* Pods-Tests-DVACategories-dummy.m */,
-				ABB51DCB018966B49C4D5702 /* Pods-Tests-DVACategories-prefix.pch */,
+				07C3FF5CC5B7953C3BB0FB12 /* Pod */,
+			);
+			name = CAShapeLayer;
+			sourceTree = "<group>";
+		};
+		591E4CDA1A9CE35FAEFC2534 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				928308F9EF11746390399B6F /* UIColor+DVALib.h */,
+				D51579BA164DE76E08234A5B /* UIColor+DVAhex.h */,
+				73BB51413F5BDA6E62E59554 /* UIColor+DVAhex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		5A35EF69ECD71268DF3C120B /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE3A9E7F8C34258EA8B14A8F /* CAGradientLayer+DVAGradient.h */,
+				FD4CE562009893463A98A385 /* CAGradientLayer+DVAGradient.m */,
+				94742014676304D875892082 /* CAGradientLayer+DVALib.h */,
+			);
+			path = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		5C5A29F07B16D8B92A289457 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4259052EA8CBEEDBF2BD5D68 /* Pods-DVACategories */,
+				253AB56ADEC2F5A5BFF088AF /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5C9A8B40731F80FBDF0904B5 /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3ABC0DA4CCCDC2CF1DCFA77E /* Pod */,
+			);
+			name = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		5CBFFDA4B3BCE9B993ECCC1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCA92C9507A65B31815664F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D8252DDB219F6E6FE45FE78 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				BD75804BB77146277CE836D3 /* Pod */,
+			);
+			name = UITableView;
+			sourceTree = "<group>";
+		};
+		65D62407E21DCC9F87659547 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				29326624E061D93C5C8AC69C /* NSString+DVALib.h */,
+				412C40A03C9CE76969CEBEA8 /* NSString+DVASecure.h */,
+				9A0531A71B31FE46CAB12901 /* NSString+DVASecure.m */,
+				418248759729D9C134C8974B /* NSString+DVAValidator.h */,
+				C9E9FA4FD9575904D55F8C5F /* NSString+DVAValidator.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		69A8351DC1B9437280FA28E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65D62407E21DCC9F87659547 /* NSString */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6BFB462E08FDEC6F44D4D5B9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A303EDA23737C46C4AAB8AC3 /* CAShapeLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7034696EAB2CBB509CDBF0F3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25095AF63478A030C9C7062C /* DVACategories */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		73E62C2C646DB97DE5B13A03 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F05022B669FB7EA67F184D0 /* UITableView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		769D2035F0E5FE7A8495A913 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D4E720C83F4607F96D942564 /* Pod */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		87E44C0B1B61E391CCA63B75 = {
+			isa = PBXGroup;
+			children = (
+				F5A8C0BFD20D758B42A0D43C /* Podfile */,
+				7034696EAB2CBB509CDBF0F3 /* Development Pods */,
+				5CBFFDA4B3BCE9B993ECCC1E /* Frameworks */,
+				F2A87A3862E424D91119F923 /* Products */,
+				5C5A29F07B16D8B92A289457 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		896BB4B36FAE644C752BF7A0 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F02762BC569D2DFA13D9C181 /* Pod */,
+			);
+			name = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9BC2C0ACB7910227314BAD19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5A35EF69ECD71268DF3C120B /* CAGradientLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A303EDA23737C46C4AAB8AC3 /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				955AE3106CD5E4CDD167F78B /* CAShapeLayer+DVADashedBorder.h */,
+				2B1E664DC5C82C4826D66F5D /* CAShapeLayer+DVADashedBorder.m */,
+				C10C1D7198F411451EE0A77F /* CAShapeLayer+DVALib.h */,
+				B1DCF29D056A19CEC2E23DC7 /* CAShapeLayer+DVARound.h */,
+				863CEF57A6E0D049E707D40E /* CAShapeLayer+DVARound.m */,
+			);
+			path = CAShapeLayer;
+			sourceTree = "<group>";
+		};
+		A6EC24E1E017998D3B38FD6B /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				068DD41094A74E88DD7CFA72 /* Pod */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		B1D4D30DE8AC912302FA5BCA /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				0F8C970CDBA7E928D139D437 /* Pod */,
+			);
+			name = NSAttributedString;
+			sourceTree = "<group>";
+		};
+		BD75804BB77146277CE836D3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				73E62C2C646DB97DE5B13A03 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		D4E720C83F4607F96D942564 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				08D91A5C8B82E52455EA894C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DBCA92C9507A65B31815664F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD28CED7CB1C3C8303F87C94 /* Foundation.framework */,
+				63B1FF238E82FB1BD5EA0B46 /* QuartzCore.framework */,
+				77BA0F5922DA9FBBFEDDA5CA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E066A257D83D3E5A5BE85519 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DD03F9EBA6F88C5640543FA /* Pods-DVACategories-DVACategories.xcconfig */,
+				B2B97254FD5D8C09EADA0813 /* Pods-DVACategories-DVACategories-Private.xcconfig */,
+				EE9DD12D2E977123BB99B849 /* Pods-DVACategories-DVACategories-dummy.m */,
+				80154F6B26ADDE8A055E91AD /* Pods-DVACategories-DVACategories-prefix.pch */,
+				321119B8027108B3F7BE334D /* Pods-Tests-DVACategories.xcconfig */,
+				177F7E315F85B8791E238E11 /* Pods-Tests-DVACategories-Private.xcconfig */,
+				5B2E2D682D5A969D5CE1F357 /* Pods-Tests-DVACategories-dummy.m */,
+				8D239578CD42E37D1710D9D2 /* Pods-Tests-DVACategories-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-DVACategories-DVACategories";
 			sourceTree = "<group>";
 		};
-		E314DD08282619A50CEC36BA /* CAGradientLayer */ = {
+		F02762BC569D2DFA13D9C181 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2542FB1F1958CD40637BE201 /* CAGradientLayer+DVAGradient.h */,
-				92BADB9A23AAA59D6C47301D /* CAGradientLayer+DVAGradient.m */,
-				2E2ADA577A96C9179505E230 /* CAGradientLayer+DVALib.h */,
+				1DDF4CE12F5FD9109DF9A5AA /* Classes */,
 			);
-			path = CAGradientLayer;
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		E5B3B957DBA654A5C5DA1D99 /* CAShapeLayer */ = {
+		F2A87A3862E424D91119F923 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A0C014A29B88EE2077DE37F /* CAShapeLayer+DVADashedBorder.h */,
-				0FE9A230A649DE70B40052EA /* CAShapeLayer+DVADashedBorder.m */,
-				B619A7F91329B313FAF50C0F /* CAShapeLayer+DVALib.h */,
-				1A50674852E23FDD02573A9F /* CAShapeLayer+DVARound.h */,
-				DA62BA78F6E48DAADA6150B5 /* CAShapeLayer+DVARound.m */,
+				E52B353C8336F47593CB9118 /* libPods-DVACategories.a */,
+				84B763384AACAE2F54CD98F9 /* libPods-DVACategories-DVACategories.a */,
+				ED58457758524EFC8D00F870 /* libPods-Tests.a */,
+				8192F1A5C11F2B17518050E6 /* libPods-Tests-DVACategories.a */,
 			);
-			path = CAShapeLayer;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		E901607A2C8BCCCF1FC3C08A /* Classes */ = {
+		F7A341ABC5102E9C0F10BE2F /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				19B091547F00763C94B66218 /* UITableView */,
+				05ADE2C9D73254C5E69A5A58 /* UICollectionViewCell+DVALib.h */,
+				AED98842ED4B532DE5EA654B /* UICollectionViewCell+DVAReusableCollectionCell.h */,
+				DA5A9A37AD5B5E182A36BCDD /* UICollectionViewCell+DVAReusableCollectionCell.m */,
 			);
-			path = Classes;
+			path = UICollectionViewCell;
 			sourceTree = "<group>";
 		};
-		EC30A1A96E37C8C50BD268B2 /* NSString */ = {
+		FFDDCC3FCD6266B492CAB236 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				17A817934DCF3D62A95E489F /* NSString+DVALib.h */,
-				C225ECB42FEAFF978C88E91C /* NSString+DVAValidator.h */,
-				BA80BCC9D568ECD065FE7C6B /* NSString+DVAValidator.m */,
-			);
-			path = NSString;
-			sourceTree = "<group>";
-		};
-		EE863934DAB3FD4CEC1302CC /* NSAttributtedString */ = {
-			isa = PBXGroup;
-			children = (
-				B7BD62C889A7A0CF03C79F6C /* NSAttributedString+DVALib.h */,
-				FEAC5B5871BEBEFAF0AE8F7D /* NSAttributedString+DVASize.h */,
-				7CB46B8BB93175FCDACF2526 /* NSAttributedString+DVASize.m */,
-			);
-			path = NSAttributtedString;
-			sourceTree = "<group>";
-		};
-		F07128D969C7DF14AD27058B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1A9E79A280F640038FD5FA2A /* UIColor */,
+				08B53F5FB17CF8AE91FD9CB5 /* NSAttributtedString */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -578,79 +586,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C37FA75043FE38594A267F3F /* Headers */ = {
+		1E027873EAC763556727C841 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04FEC26C56309D86E6B1573 /* CAGradientLayer+DVAGradient.h in Headers */,
-				E7E118DAC8800216734CBB11 /* CAGradientLayer+DVALib.h in Headers */,
-				E4773277C6FF7BC28ABB3A76 /* CAShapeLayer+DVADashedBorder.h in Headers */,
-				FDF04CF07CDA8348AFEB5C4F /* CAShapeLayer+DVALib.h in Headers */,
-				C26CC249EE54F7A6289031D4 /* CAShapeLayer+DVARound.h in Headers */,
-				FF4EACD0F48FCF607C78C5CB /* DVACategories.h in Headers */,
-				4DDFD9F82E32B6BFA16D121E /* NSAttributedString+DVALib.h in Headers */,
-				3DA6DB55F179A5CDA78DB8FC /* NSAttributedString+DVASize.h in Headers */,
-				9E6D040042A3863421668EFD /* NSString+DVALib.h in Headers */,
-				61CAC7C0A0F77E93D5D9915E /* NSString+DVAValidator.h in Headers */,
-				E46D1360D4E89E7ACD6B7E26 /* UICollectionViewCell+DVALib.h in Headers */,
-				CD9ADDEBEDB5F0E9876ECBB9 /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */,
-				08EF3F852AB547AE58AF3A0C /* UIColor+DVALib.h in Headers */,
-				B3C76081A50128F001BFCA5D /* UIColor+DVAhex.h in Headers */,
-				63B6A4AE49D09D2F5C677CE9 /* UITableView+DVACellHeight.h in Headers */,
-				731422497711E6959F67E53F /* UITableView+DVALib.h in Headers */,
+				4E82E0A6E6C7612F15A1278C /* CAGradientLayer+DVAGradient.h in Headers */,
+				F51FA5FCBA359AEE5834EE3A /* CAGradientLayer+DVALib.h in Headers */,
+				97A8C191C3582666A0A7C529 /* CAShapeLayer+DVADashedBorder.h in Headers */,
+				33EA4B3B8A208BD2EC426866 /* CAShapeLayer+DVALib.h in Headers */,
+				C1B76BEA920A9A9744D4F3C2 /* CAShapeLayer+DVARound.h in Headers */,
+				0D8E687A4F67D4ABB82AE172 /* DVACategories.h in Headers */,
+				687EF3111A4D87E1B3FD9387 /* NSAttributedString+DVALib.h in Headers */,
+				B46EDA54CF05ABD1D2F17074 /* NSAttributedString+DVASize.h in Headers */,
+				E3426CE1A81E8FE8E03C7C97 /* NSString+DVALib.h in Headers */,
+				F1DF6BC5CAA54EF7D1E42AB7 /* NSString+DVASecure.h in Headers */,
+				3629FADE63E80AF7B0FFE245 /* NSString+DVAValidator.h in Headers */,
+				DB160AA6B9EE8323F5C287D0 /* UICollectionViewCell+DVALib.h in Headers */,
+				5A837906FF3B87804A2D9EA2 /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */,
+				DF891450957A09F2854C6F20 /* UIColor+DVALib.h in Headers */,
+				D64B6B616FF2ADFE2C3EE0FC /* UIColor+DVAhex.h in Headers */,
+				2C11EF8281777E6FE6D85598 /* UITableView+DVACellHeight.h in Headers */,
+				51B431852362770EEBA0077E /* UITableView+DVALib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF36EBC9635DE9E0264C2C0A /* Headers */ = {
+		2DDFB79E1D9A0C35EC1C7318 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6601D286C025C845199B2CA1 /* CAGradientLayer+DVAGradient.h in Headers */,
-				F7F646A8B71E5AEA61EB1E82 /* CAGradientLayer+DVALib.h in Headers */,
-				7FF1209B5263C73CE392959E /* CAShapeLayer+DVADashedBorder.h in Headers */,
-				B7EFB1898DDEF17F5368AAE2 /* CAShapeLayer+DVALib.h in Headers */,
-				7949B1D2AEE302401171A513 /* CAShapeLayer+DVARound.h in Headers */,
-				59D151E52ECFB792B0A9D2D6 /* DVACategories.h in Headers */,
-				2A9ECAB45839455CFDBF990C /* NSAttributedString+DVALib.h in Headers */,
-				A060892888258E535A01C870 /* NSAttributedString+DVASize.h in Headers */,
-				A5E34C0DA5848410542478D6 /* NSString+DVALib.h in Headers */,
-				FC605127AD0658E3130D4805 /* NSString+DVAValidator.h in Headers */,
-				0F160CCCFBD631CBCED4D461 /* UICollectionViewCell+DVALib.h in Headers */,
-				399D7A652EEBCF06156EB168 /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */,
-				80C2FECFFEABF2A03BF1A384 /* UIColor+DVALib.h in Headers */,
-				49C1C62DB1F6062E7DA6A363 /* UIColor+DVAhex.h in Headers */,
-				700206594F882075E53D5806 /* UITableView+DVACellHeight.h in Headers */,
-				5B19BC44C346481945E01A23 /* UITableView+DVALib.h in Headers */,
+				94D4EE708ED483589FE1A309 /* CAGradientLayer+DVAGradient.h in Headers */,
+				0E78F1F51D2CE8EF6916B420 /* CAGradientLayer+DVALib.h in Headers */,
+				8F2F7BBC873D057E4E970DD6 /* CAShapeLayer+DVADashedBorder.h in Headers */,
+				92008F33931E67B565B96469 /* CAShapeLayer+DVALib.h in Headers */,
+				1C36B679DF33A235D38F7986 /* CAShapeLayer+DVARound.h in Headers */,
+				31FCD0733A226E0EC49F8596 /* DVACategories.h in Headers */,
+				CAB06DEE51BBF1056AC0D12D /* NSAttributedString+DVALib.h in Headers */,
+				C2E3D6B5926CB28D8B8A9542 /* NSAttributedString+DVASize.h in Headers */,
+				6CAD8FBB40105D482E203514 /* NSString+DVALib.h in Headers */,
+				EC59F19C9678F9806617767A /* NSString+DVASecure.h in Headers */,
+				4A6CE497A8C3DFA51FB5043B /* NSString+DVAValidator.h in Headers */,
+				80F48AA874AFF5DE4A96CA6B /* UICollectionViewCell+DVALib.h in Headers */,
+				D1A98B957140563B653991AD /* UICollectionViewCell+DVAReusableCollectionCell.h in Headers */,
+				51EA9F837641EAE41934B1B6 /* UIColor+DVALib.h in Headers */,
+				547E91174CB33A069C3FB968 /* UIColor+DVAhex.h in Headers */,
+				5BF978DCEA42D1423B8FC16B /* UITableView+DVACellHeight.h in Headers */,
+				0BC2C337D7AC3FC6FBFC1B4F /* UITableView+DVALib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		30BBEE971784F481454A2649 /* Pods-DVACategories-DVACategories */ = {
+		32B7E4D1321002D3DD709704 /* Pods-Tests-DVACategories */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFDB10C23633E58BDAE6EDDB /* Build configuration list for PBXNativeTarget "Pods-DVACategories-DVACategories" */;
+			buildConfigurationList = 50873667843F5F93A9F2D80F /* Build configuration list for PBXNativeTarget "Pods-Tests-DVACategories" */;
 			buildPhases = (
-				E6C1C8FED1D12ED7C8273015 /* Sources */,
-				08948C4F8C2CCAF4FE4CB244 /* Frameworks */,
-				EF36EBC9635DE9E0264C2C0A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-DVACategories-DVACategories";
-			productName = "Pods-DVACategories-DVACategories";
-			productReference = 8C1534E90E93315759ECB214 /* libPods-DVACategories-DVACategories.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		879924C492F728E0271DF75C /* Pods-Tests-DVACategories */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A692529162DDA1037CCCFE9 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVACategories" */;
-			buildPhases = (
-				F2B21609642F8E4D82CC3A4D /* Sources */,
-				07CD936AA3931E25B94060A0 /* Frameworks */,
-				C37FA75043FE38594A267F3F /* Headers */,
+				32B7B421710C3278DA42C694 /* Sources */,
+				E7755A9BB5EE2794E8633396 /* Frameworks */,
+				2DDFB79E1D9A0C35EC1C7318 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -658,187 +651,158 @@
 			);
 			name = "Pods-Tests-DVACategories";
 			productName = "Pods-Tests-DVACategories";
-			productReference = 026EDF3130097B1D76A0B736 /* libPods-Tests-DVACategories.a */;
+			productReference = 8192F1A5C11F2B17518050E6 /* libPods-Tests-DVACategories.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D7E05B3D3390DCFA476BAA6C /* Pods-Tests */ = {
+		AC63BB16584E270DC0F7480E /* Pods-DVACategories-DVACategories */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 434D0020576BFCF32257A5CC /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildConfigurationList = F8D0C80F2A9208DC5E45C526 /* Build configuration list for PBXNativeTarget "Pods-DVACategories-DVACategories" */;
 			buildPhases = (
-				7B91BB649C465E37E4D51784 /* Sources */,
-				221911B7C84A4901A5E96405 /* Frameworks */,
+				BB480A80DE7D18844B3CD5C7 /* Sources */,
+				0AB8B89D81CA2C210DF9D8F0 /* Frameworks */,
+				1E027873EAC763556727C841 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				26A2719136A6B63805D876F4 /* PBXTargetDependency */,
 			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = 60D453C46A15BD3433112AB4 /* libPods-Tests.a */;
+			name = "Pods-DVACategories-DVACategories";
+			productName = "Pods-DVACategories-DVACategories";
+			productReference = 84B763384AACAE2F54CD98F9 /* libPods-DVACategories-DVACategories.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F8EFA660F5C502E163C9DE0A /* Pods-DVACategories */ = {
+		B427985C9CDDF4C99867E6A5 /* Pods-DVACategories */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C30675920E198A46CDF2CEAD /* Build configuration list for PBXNativeTarget "Pods-DVACategories" */;
+			buildConfigurationList = 46AFBD6A4FAE5F28EC55A9EB /* Build configuration list for PBXNativeTarget "Pods-DVACategories" */;
 			buildPhases = (
-				3D950B2B98B07DD91F88BA2A /* Sources */,
-				54728AACD18953A2F650C0A8 /* Frameworks */,
+				C4D03FF313F5852C7EC5DE05 /* Sources */,
+				FC3058F63BD7FC8C4301DD27 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D4A0921599933EDF109B6138 /* PBXTargetDependency */,
+				7926E4C59CD88E0C4B931147 /* PBXTargetDependency */,
 			);
 			name = "Pods-DVACategories";
 			productName = "Pods-DVACategories";
-			productReference = 5E3053604CC853D2CF2E624F /* libPods-DVACategories.a */;
+			productReference = E52B353C8336F47593CB9118 /* libPods-DVACategories.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B87D767DE624217B70736065 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9E4DE28140BB491B917C82 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				A09A09F87BAB8B7C54FE08D0 /* Sources */,
+				27B719FE6538A50F98CA04A3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39514F821A958A005E1D1F6C /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = ED58457758524EFC8D00F870 /* libPods-Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEFD6407A559274E197C9F42 /* Project object */ = {
+		76F0C29E4C88BC3A34C13696 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 4E7AF2D0F3DFF16F92EC7562 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 3CBF2021FF70217FC54B5DC6 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 45F7A6E8E71A8C47F982865A;
-			productRefGroup = BB0841A1BBB1778C3CAC99FE /* Products */;
+			mainGroup = 87E44C0B1B61E391CCA63B75;
+			productRefGroup = F2A87A3862E424D91119F923 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8EFA660F5C502E163C9DE0A /* Pods-DVACategories */,
-				30BBEE971784F481454A2649 /* Pods-DVACategories-DVACategories */,
-				D7E05B3D3390DCFA476BAA6C /* Pods-Tests */,
-				879924C492F728E0271DF75C /* Pods-Tests-DVACategories */,
+				B427985C9CDDF4C99867E6A5 /* Pods-DVACategories */,
+				AC63BB16584E270DC0F7480E /* Pods-DVACategories-DVACategories */,
+				B87D767DE624217B70736065 /* Pods-Tests */,
+				32B7E4D1321002D3DD709704 /* Pods-Tests-DVACategories */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D950B2B98B07DD91F88BA2A /* Sources */ = {
+		32B7B421710C3278DA42C694 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E95C54DB130DC2A8F24FD28 /* Pods-DVACategories-dummy.m in Sources */,
+				E17868F391A39BFCCB6325A0 /* CAGradientLayer+DVAGradient.m in Sources */,
+				EE4F007E3DC0E9BE8EFEE053 /* CAShapeLayer+DVADashedBorder.m in Sources */,
+				F1F135BC1FA5F531E496827C /* CAShapeLayer+DVARound.m in Sources */,
+				18839BAB99C089D34B29A893 /* NSAttributedString+DVASize.m in Sources */,
+				3971F7A08B63D3DC13A00A07 /* NSString+DVASecure.m in Sources */,
+				772CA8AADA537938138D9658 /* NSString+DVAValidator.m in Sources */,
+				54CE5FDE16A9070D79512B28 /* Pods-Tests-DVACategories-dummy.m in Sources */,
+				90C29A40FB8E10765BCC4185 /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */,
+				815E765DB095F89C7942CBFC /* UIColor+DVAhex.m in Sources */,
+				116F134C09632AE2543AA225 /* UITableView+DVACellHeight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B91BB649C465E37E4D51784 /* Sources */ = {
+		A09A09F87BAB8B7C54FE08D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF8AB4771BCB61230C80B6E /* Pods-Tests-dummy.m in Sources */,
+				C23741EE6D7EF6FF312C0ECF /* Pods-Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6C1C8FED1D12ED7C8273015 /* Sources */ = {
+		BB480A80DE7D18844B3CD5C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBA51C74324ADB21FF13F34 /* CAGradientLayer+DVAGradient.m in Sources */,
-				EE4394BF8567CE0A3C7BC98E /* CAShapeLayer+DVADashedBorder.m in Sources */,
-				B643CC29D24BA0092C2FC02C /* CAShapeLayer+DVARound.m in Sources */,
-				67CB915DC671B2828AC3FA3D /* NSAttributedString+DVASize.m in Sources */,
-				2A09FAA2223C0C7EB98D0960 /* NSString+DVAValidator.m in Sources */,
-				84E285C731CC60997AF49F4A /* Pods-DVACategories-DVACategories-dummy.m in Sources */,
-				DFD3AF44A9EE235D3AD2611A /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */,
-				6688BE64F42BD06A664FC256 /* UIColor+DVAhex.m in Sources */,
-				538F377211CD6971EB14E49A /* UITableView+DVACellHeight.m in Sources */,
+				8561C4365960ACCCFB622766 /* CAGradientLayer+DVAGradient.m in Sources */,
+				07E066AAD1AF283E56647903 /* CAShapeLayer+DVADashedBorder.m in Sources */,
+				A03E402BFE9D05127764BD84 /* CAShapeLayer+DVARound.m in Sources */,
+				3871A41BB9B58BF3CDF5846A /* NSAttributedString+DVASize.m in Sources */,
+				80E284B3E82243359314A037 /* NSString+DVASecure.m in Sources */,
+				102638B9E31F17051B470DD9 /* NSString+DVAValidator.m in Sources */,
+				BF8F43968D8CA547C99EF4C6 /* Pods-DVACategories-DVACategories-dummy.m in Sources */,
+				BDB30566599DE583BB6866AC /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */,
+				1BBBDE833AD187331249394B /* UIColor+DVAhex.m in Sources */,
+				478713487EB4970FAE2A8CD5 /* UITableView+DVACellHeight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B21609642F8E4D82CC3A4D /* Sources */ = {
+		C4D03FF313F5852C7EC5DE05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C77642BCB0746593A2793FF /* CAGradientLayer+DVAGradient.m in Sources */,
-				26A3095FE817B621D389DEC5 /* CAShapeLayer+DVADashedBorder.m in Sources */,
-				845FB1B71F63D9C8DBAF75A5 /* CAShapeLayer+DVARound.m in Sources */,
-				76D544A847CE0BFBD49F346D /* NSAttributedString+DVASize.m in Sources */,
-				48B507E7EC7B5B0CD5D6A727 /* NSString+DVAValidator.m in Sources */,
-				13DC3C18B1E4838236EF728F /* Pods-Tests-DVACategories-dummy.m in Sources */,
-				0C5A43945EC97B5A0BE6BDD4 /* UICollectionViewCell+DVAReusableCollectionCell.m in Sources */,
-				C16F779B133BC0EB6404A3D8 /* UIColor+DVAhex.m in Sources */,
-				EC375CB36894E3505CD90D10 /* UITableView+DVACellHeight.m in Sources */,
+				CE87939DAC3A3DCD75D2059E /* Pods-DVACategories-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		26A2719136A6B63805D876F4 /* PBXTargetDependency */ = {
+		39514F821A958A005E1D1F6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Tests-DVACategories";
-			target = 879924C492F728E0271DF75C /* Pods-Tests-DVACategories */;
-			targetProxy = 295F772CB2748E36958C5E3B /* PBXContainerItemProxy */;
+			target = 32B7E4D1321002D3DD709704 /* Pods-Tests-DVACategories */;
+			targetProxy = C456C3D034573773C80CD4FE /* PBXContainerItemProxy */;
 		};
-		D4A0921599933EDF109B6138 /* PBXTargetDependency */ = {
+		7926E4C59CD88E0C4B931147 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DVACategories-DVACategories";
-			target = 30BBEE971784F481454A2649 /* Pods-DVACategories-DVACategories */;
-			targetProxy = 5403CD5CBF6CE84DAD8E955F /* PBXContainerItemProxy */;
+			target = AC63BB16584E270DC0F7480E /* Pods-DVACategories-DVACategories */;
+			targetProxy = EA5900D4696389C76C62A7AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5701EE7532879446221887DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59BC1FE7EC58CBED5451219E /* Pods-DVACategories.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		59C24685D221BC210CB315E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD79DEB449E21C4C6E429FFC /* Pods-Tests-DVACategories-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVACategories/Pods-Tests-DVACategories-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		61C3F8F065AFAFFDB69A1831 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07FE911B9ADD3AA0069ACE16 /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		84524AF82199B72AAF6F1560 /* Debug */ = {
+		20B220A2ACE84A8730BFF8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -877,39 +841,23 @@
 			};
 			name = Debug;
 		};
-		89DF79101C6D80DB4704912F /* Release */ = {
+		21D2AB71BF6179D818487AD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5C62B1B67F3AE281CC90CDD /* Pods-DVACategories-DVACategories-Private.xcconfig */;
+			baseConfigurationReference = B2B97254FD5D8C09EADA0813 /* Pods-DVACategories-DVACategories-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVACategories-DVACategories/Pods-DVACategories-DVACategories-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		8DF4AB59E9D891B9F7C96977 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 070F5B50A1B8CCDA6A5E26F0 /* Pods-DVACategories.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		AEEC5B266915E99D915EA213 /* Release */ = {
+		2BBD057F06E3652A9D59371C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -943,25 +891,25 @@
 			};
 			name = Release;
 		};
-		C040DCF7C3206C1542EFBF2A /* Debug */ = {
+		67866A917FFD088FDA6181AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5C62B1B67F3AE281CC90CDD /* Pods-DVACategories-DVACategories-Private.xcconfig */;
+			baseConfigurationReference = A83F1D0D4DAB7C68C4269A75 /* Pods-DVACategories.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVACategories-DVACategories/Pods-DVACategories-DVACategories-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		C6CC47E8E51D6B605CA5BC1D /* Release */ = {
+		8527FD80C49F49817901AEC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD79DEB449E21C4C6E429FFC /* Pods-Tests-DVACategories-Private.xcconfig */;
+			baseConfigurationReference = 177F7E315F85B8791E238E11 /* Pods-Tests-DVACategories-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVACategories/Pods-Tests-DVACategories-prefix.pch";
@@ -975,9 +923,41 @@
 			};
 			name = Release;
 		};
-		F81244F8225FAF1ABFDCFF70 /* Debug */ = {
+		A2A060D4338A1A2DB838893E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0E8698D3622D2DC7C8D1973 /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = BF55A51C14201B44B67721E5 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BBEAF9FB24DACAC512629C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B97254FD5D8C09EADA0813 /* Pods-DVACategories-DVACategories-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVACategories-DVACategories/Pods-DVACategories-DVACategories-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EB17D6D8C39D4ADB55B099DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7FBB787D22B48D8E369E90 /* Pods-DVACategories.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -991,55 +971,87 @@
 			};
 			name = Debug;
 		};
+		FACB910195FE6727948FC5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6337C09B6FD53F27A876A37F /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FEF7265D87EB45063F632EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177F7E315F85B8791E238E11 /* Pods-Tests-DVACategories-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVACategories/Pods-Tests-DVACategories-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		434D0020576BFCF32257A5CC /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+		0B9E4DE28140BB491B917C82 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F81244F8225FAF1ABFDCFF70 /* Debug */,
-				61C3F8F065AFAFFDB69A1831 /* Release */,
+				FACB910195FE6727948FC5DD /* Debug */,
+				A2A060D4338A1A2DB838893E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E7AF2D0F3DFF16F92EC7562 /* Build configuration list for PBXProject "Pods" */ = {
+		3CBF2021FF70217FC54B5DC6 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84524AF82199B72AAF6F1560 /* Debug */,
-				AEEC5B266915E99D915EA213 /* Release */,
+				20B220A2ACE84A8730BFF8A9 /* Debug */,
+				2BBD057F06E3652A9D59371C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A692529162DDA1037CCCFE9 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVACategories" */ = {
+		46AFBD6A4FAE5F28EC55A9EB /* Build configuration list for PBXNativeTarget "Pods-DVACategories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59C24685D221BC210CB315E9 /* Debug */,
-				C6CC47E8E51D6B605CA5BC1D /* Release */,
+				EB17D6D8C39D4ADB55B099DD /* Debug */,
+				67866A917FFD088FDA6181AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFDB10C23633E58BDAE6EDDB /* Build configuration list for PBXNativeTarget "Pods-DVACategories-DVACategories" */ = {
+		50873667843F5F93A9F2D80F /* Build configuration list for PBXNativeTarget "Pods-Tests-DVACategories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C040DCF7C3206C1542EFBF2A /* Debug */,
-				89DF79101C6D80DB4704912F /* Release */,
+				FEF7265D87EB45063F632EB2 /* Debug */,
+				8527FD80C49F49817901AEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C30675920E198A46CDF2CEAD /* Build configuration list for PBXNativeTarget "Pods-DVACategories" */ = {
+		F8D0C80F2A9208DC5E45C526 /* Build configuration list for PBXNativeTarget "Pods-DVACategories-DVACategories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5701EE7532879446221887DE /* Debug */,
-				8DF4AB59E9D891B9F7C96977 /* Release */,
+				21D2AB71BF6179D818487AD9 /* Debug */,
+				BBEAF9FB24DACAC512629C81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CEFD6407A559274E197C9F42 /* Project object */;
+	rootObject = 76F0C29E4C88BC3A34C13696 /* Project object */;
 }

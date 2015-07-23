@@ -28,9 +28,9 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DVACategories:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   DVACategories: 8de462264c91c1d23d96362acb92b88ac3ba9063
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2
