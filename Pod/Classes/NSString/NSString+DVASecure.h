@@ -18,11 +18,21 @@
 /*
  Generates MD5 strings for plain string
  
+ @param a NSString
  @return an MD5 String
  
  @since 1.0
  */
 
++ (NSString *)dva_generateMD5:(NSString *)string;
 
-- (NSString *)dva_generateMD5:(NSString *)string;
+/*
+ Generates MD5 strings for plain string
+ 
+ @return an MD5 String
+ 
+ @since 1.0
+ */
+- (NSString *)dva_generateMD5;
+
 @end
