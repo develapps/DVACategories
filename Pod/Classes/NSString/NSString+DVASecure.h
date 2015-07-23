@@ -24,5 +24,5 @@
  */
 
 
-- (NSString *)generateMD5:(NSString *)string;
+- (NSString *)dva_generateMD5:(NSString *)string;
 @end

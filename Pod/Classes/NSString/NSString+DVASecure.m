@@ -9,7 +9,7 @@
 #import "NSString+DVASecure.h"
 
 @implementation NSString (DVASecure)
-- (NSString *)generateMD5:(NSString *)string{
+- (NSString *)dva_generateMD5:(NSString *)string{
     const char *cStr = [string UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     
