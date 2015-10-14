@@ -7,3 +7,5 @@
 //
 
 #import "NSAttributedString+DVASize.h"
+#import "NSAttributedString+DVAImageAttachment.h"
+#import "NSAttributedString+DVAAttributedString.h"

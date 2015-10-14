@@ -8,3 +8,5 @@
 
 #import "NSString+DVAValidator.h"
 #import "NSString+DVASecure.h"
+#import "NSString+DVAAttributedString.h"
+#import "NSString+DVALocalized.h"

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.4.0"
+  s.version          = "1.5.0"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -33,6 +33,25 @@ Pod::Spec.new do |s|
                         ** NSString+DVASecure: MD5 hashing.
                         ** NSString+DVAValidator: Some validation methods.
 
+                        Added 1.5.0:
+                        * NSString:
+                            ** NSString+DVAAttributedString: Attributed String converter.
+                            ** NSString+DVALocalized: Localized string convenience method.
+                        * NSAttributedString:
+                            ** NSAttributedString+DVAAttributedString: Add attributes to an attributed string.
+                            ** NSAttributedString+DVAImageAttachment: Attributted Strings with image attachments.
+                        * NSArray:
+                            ** NSArray+FP: Functional programming helpers.
+                        * NSDictionary:
+                            ** NSDictionary+FP: Functional programming helpers.
+                        * NSData:
+                            ** NSData+DVASecure: MD5 hashing.
+                        * UIImage:
+                            ** UIImage+DVASecure: MD5 hashing.
+                        * UILabel:
+                            ** UILabel+DVABadgeLabel: Setup a label over a view like a badge.
+                        * UIView:
+                            ** UIView+DVABadgeLabel: Setup a view over a view like a badge.
 
 # --------
 # ADD NEW CATEGORIES HERE
@@ -67,6 +86,13 @@ Pod::Spec.new do |s|
     cs.dependency 'DVACategories/CAGradientLayer'
     cs.dependency 'DVACategories/CAShapeLayer'
     cs.dependency 'DVACategories/UICollectionViewCell'
+    cs.dependency 'DVACategories/NSArray'
+    cs.dependency 'DVACategories/NSDictionary'
+    cs.dependency 'DVACategories/NSData'
+    cs.dependency 'DVACategories/UIImage'
+    cs.dependency 'DVACategories/UILabel'
+    cs.dependency 'DVACategories/UIView'
+
 #    cs.dependency 'DVACategories/DVAParseNotifications'
 #    cs.dependency 'DVACategories/DVAParseRemoteNotificationsDefaultHandler'
 # --------
@@ -87,6 +113,7 @@ Pod::Spec.new do |s|
     sp.source_files = 'Pod/Classes/NSAttributtedString/**/*.{h,m}'
   end
   s.subspec 'NSString' do |sp|
+    sp.dependency 'DVACategories/NSAttributedString'
     sp.source_files = 'Pod/Classes/NSString/**/*.{h,m}'
   end
   s.subspec 'UITableView' do |sp|
@@ -102,6 +129,26 @@ Pod::Spec.new do |s|
     end
   s.subspec 'UICollectionViewCell' do |sp|
     sp.source_files = 'Pod/Classes/UICollectionViewCell/**/*.{h,m}'
+  end
+  s.subspec 'NSArray' do |sp|
+    sp.source_files = 'Pod/Classes/NSArray/**/*.{h,m}'
+  end
+  s.subspec 'NSDictionary' do |sp|
+    sp.source_files = 'Pod/Classes/NSDictionary/**/*.{h,m}'
+  end
+  s.subspec 'NSData' do |sp|
+    sp.source_files = 'Pod/Classes/NSData/**/*.{h,m}'
+  end
+  s.subspec 'UIImage' do |sp|
+    sp.dependency 'DVACategories/NSData'
+    sp.source_files = 'Pod/Classes/UIImage/**/*.{h,m}'
+  end
+  s.subspec 'UILabel' do |sp|
+    sp.dependency 'DVACategories/UIView'
+    sp.source_files = 'Pod/Classes/UILabel/**/*.{h,m}'
+  end
+  s.subspec 'UIView' do |sp|
+    sp.source_files = 'Pod/Classes/UIView/**/*.{h,m}'
   end
 
 #   s.subspec 'DVAParseNotifications' do |sp|

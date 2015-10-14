@@ -12,6 +12,8 @@
 #import "NSAttributedString+DVALib.h"
 #import "NSString+DVALib.h"
 #import "UIColor+DVALib.h"
+#import "NSArray+DVALib.h"
+#import "NSDictionary+DVALib.h"
 
 #pragma mark - UIKit categories
 
