@@ -17,7 +17,5 @@
                                         withFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(3,4);
 +(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font
                                          andFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(2,3);
--(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font
-                                         andImages:(NSArray *)imagesNames;
 -(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font andColor:(UIColor*)color;
 @end

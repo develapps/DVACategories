@@ -21,7 +21,7 @@
     NSString *formattedString = [[NSString alloc] initWithFormat:format arguments:args];
     va_end(args);
     
-    __block NSAttributedString*as=[[[NSAttributedString alloc] initWithString:formattedString] dva dva_attributedStringWithFont:font];
+    __block NSAttributedString*as=[formattedString dva_attributedStringWithFont:font];
     [imagesNames enumerateObjectsUsingBlock:^(NSString*imageName, NSUInteger idx, BOOL *stop) {
         UIImage*image=[UIImage imageNamed:imageName];
         as=[as dva_stringWithImage:image];
@@ -39,12 +39,11 @@
     return [formattedString dva_attributedStringWithFont:font];
 }
 
--(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font
-                                         andImages:(NSArray *)imagesNames{
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wall"
-    return [NSString dva_attributedStringWithFont:font andImages:imagesNames withFormat:self];
-#pragma clang diagnostic pop
+-(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font{
+    NSMutableAttributedString *att = [[NSMutableAttributedString alloc] initWithString:self];
+    [att addAttribute:NSFontAttributeName
+                value:font range:NSMakeRange(0, [self length])];
+    return att;
 }
 
 -(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font andColor:(UIColor*)color{
