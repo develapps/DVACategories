@@ -21,7 +21,7 @@
     NSString *formattedString = [[NSString alloc] initWithFormat:format arguments:args];
     va_end(args);
     
-    __block NSAttributedString*as=[[[NSAttributedString alloc] initWithString:formattedString] dva dva_attributedStringWithFont:font];
+    __block NSAttributedString*as=[formattedString dva_attributedStringWithFont:font];
     [imagesNames enumerateObjectsUsingBlock:^(NSString*imageName, NSUInteger idx, BOOL *stop) {
         UIImage*image=[UIImage imageNamed:imageName];
         as=[as dva_stringWithImage:image];
@@ -53,5 +53,10 @@
     return as;
 }
 
-
+-(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font{
+    NSMutableAttributedString *att = [[NSMutableAttributedString alloc] initWithString:self];
+    [att addAttribute:NSFontAttributeName
+                value:font range:NSMakeRange(0, [self length])];
+    return att;
+}
 @end
