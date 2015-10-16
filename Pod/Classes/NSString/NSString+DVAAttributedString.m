@@ -10,7 +10,6 @@
 #import "NSString+DVALocalized.h"
 #import "NSString+DVAAttributedString.h"
 #import "NSAttributedString+DVAImageAttachment.h"
-#import "NSAttributedString+DVAAttributedString.h"
 
 @implementation NSString (DVAAttributedString)
 +(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font
@@ -22,7 +21,7 @@
     NSString *formattedString = [[NSString alloc] initWithFormat:format arguments:args];
     va_end(args);
     
-    __block NSAttributedString*as=[formattedString dva_attributedStringWithFont:font];
+    __block NSAttributedString*as=[[[NSAttributedString alloc] initWithString:formattedString] dva dva_attributedStringWithFont:font];
     [imagesNames enumerateObjectsUsingBlock:^(NSString*imageName, NSUInteger idx, BOOL *stop) {
         UIImage*image=[UIImage imageNamed:imageName];
         as=[as dva_stringWithImage:image];
@@ -54,11 +53,5 @@
     return as;
 }
 
--(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font{
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wall"
-    return [NSString dva_attributedStringWithFont:font andImages:nil withFormat:self];
-#pragma clang diagnostic pop
-}
 
 @end
