@@ -52,5 +52,10 @@
     return as;
 }
 
-
+-(NSAttributedString*)dva_attributedStringWithFont:(UIFont *)font{
+    NSMutableAttributedString *att = [[NSMutableAttributedString alloc] initWithString:self];
+    [att addAttribute:NSFontAttributeName
+                value:font range:NSMakeRange(0, [self length])];
+    return att;
+}
 @end
