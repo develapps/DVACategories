@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import <OHHTTPStubs/OHHTTPStubs.h>
+#import <OHHTTPStubs/OHHTTPStubsResponse+JSON.h>
+#import <OHHTTPStubs/OHPathHelpers.h>
 #import <AFNetworking/AFNetworking.h>
 
 /**
@@ -27,11 +29,81 @@ typedef enum : NSUInteger {
 } DVAStubResponseHTTPCodes;
 
 
+typedef enum : NSUInteger {
+    kDVABlockStubConfiguratorValueEndpoint,
+    kDVABlockStubConfiguratorValueJson,
+    kDVABlockStubConfiguratorValueReadFile,
+    kDVABlockStubConfiguratorValueType,
+    kDVABlockStubConfiguratorValueStatuscode,
+    kDVABlockStubConfiguratorValueHeaders,
+    kDVABlockStubConfiguratorValueRequestTime,
+    kDVABlockStubConfiguratorValueResponseTime,
+    kDVABlockStubConfiguratorValueWaitTime,
+} DVABlockStubConfiguratorValue;
 
 /**
  @author Pablo Romeu, 15-06-11 11:06:31
  
- Extend test with block stubbing
+ Container object to configure a stub. If no values are set it uses default ones:
+ 
+    _statusCode     =   kDVAStubCodeOk;
+    _type           =   kDVAStubGET;
+    _headers        =   @{@"Content-Type":@"application/json"};
+    _requestTime    =   1;
+    _responseTime   =   OHHTTPStubsDownloadSpeedWifi;
+    _json           =   @"{}";
+    _waitTime       =   10;
+ 
+ @since 1.0.4
+ */
+@interface DVABlockStubConfigurator : NSObject
+@property (nonatomic,strong)    NSString                    *endpoint;
+@property (nonatomic,strong)    id                          json;
+@property (nonatomic)           DVAStubOp                   type;
+@property (nonatomic)           DVAStubResponseHTTPCodes    statusCode;
+@property (nonatomic,strong)    NSDictionary*               headers;
+@property (nonatomic)           NSTimeInterval              requestTime;
+@property (nonatomic)           NSTimeInterval              responseTime;
+@property (nonatomic)           NSTimeInterval              waitTime;
++(instancetype)configuratorWithDictionary:(NSDictionary*)dictionary;
++(id)dva_readJsonFile:(NSString*)json;
+@end
+
+
+
+/**
+ @author Pablo Romeu, 15-06-11 11:06:31
+ 
+ Extend test with block stubbing. Sample:
+ 
+    - (void)tearDown {
+        // It is important to remove the stubs after each test
+        if (kStubsEnabled) [OHHTTPStubs removeAllStubs];
+        [super tearDown];
+ 
+    }
+
+    - (void)testWhatever{
+         // If enabled, add the stub
+        if (kStubsEnabled){
+            DVABlockStubConfigurator *configurator = [DVABlockStubConfigurator new];
+            configurator.endpoint       = kTagURLAquamigoGetAllInfo;
+            configurator.json           = [DVABlockStubConfigurator dva_readJsonFile:@"Rechability"];
+            configurator.type           = kDVAStubPOST;
+            [self dva_stubOperationWithOptions:configurator];
+        }
+ 
+        XCTestExpectation *registerExpect = [self expectationWithDescription:@"reachabilityOk"];
+ 
+        [[AQSRequestManager shared] postOp:kTagURLAquamigoGetAllInfo withParameters:nil completion:^(NSURL *redirectURL, NSDictionary *json, BOOL success, NSError *error) {
+            XCTAssertTrue(success, @"TEST %s FAILED: Error in call was %@",__PRETTY_FUNCTION__,error);
+            [registerExpect fulfill];
+        }];
+ 
+        [self waitForExpectationsWithTimeout:5 handler:nil];
+    }
+ @warning You MUST be sure not to call NSURLSessionConfiguration shared instance before you stub a method. For example, at `ApplicationDidFinishLaunchingWithOptions:` method.
+ 
  
  @since 1.0.4
  */
@@ -42,109 +114,25 @@ typedef enum : NSUInteger {
 /**
  @author Pablo Romeu, 15-06-11 14:06:00
  
- Stubs a test block with expectations. Shorthand to `dva_testBlock:stubEndpoint:withOp:withResponseFile:andStatusCode:andHeaders:`
- 
- Defaults code to 200 and headers to @{@"Content-Type":@"application/json"}.
+ Stubs a test block with expectations. If no configurator is passed default values are used
  
  @warning This will call `waitForExpectationsWithTimeout:handler:` by itself to discard stubbing. Do not do it yourself.
  
- @param testBlock the test block
- @param endpoint  the endpoint to test
- @param json      the json response
- @param type      the operation type
- 
- @see `dva_testBlock:stubEndpoint:withOp:withResponseFile:andStatusCode:andHeaders:`
- 
- @since 1.0.4
- */
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type;
+ @param configuration the test configurator
+*/
+-(void)dva_stubOperationWithOptions:(DVABlockStubConfigurator*)configuration;
 
 /**
- @author Pablo Romeu, 15-06-15 17:06:40
+ @author Pablo Romeu, 15-06-11 14:06:00
  
- Stubs a test block with expectations. Shorthand to `dva_testBlock:stubEndpoint:withOp:withResponseFile:andStatusCode:andHeaders:`
- 
- Defaults code to 200 and headers to @{@"Content-Type":@"application/json"}.
+ Stubs a test block with expectations. If no configurator is passed default values are used
  
  @warning This will call `waitForExpectationsWithTimeout:handler:` by itself to discard stubbing. Do not do it yourself.
  
- @param testBlock the test block
- @param endpoint  the endpoint to test
- @param json      the json response
- @param type      the operation type
- @param statusCode the returning HTTP status code
-
- @see `dva_testBlock:stubEndpoint:withOp:withResponseFile:andStatusCode:andHeaders:`
- 
- @since 1.0.4
-
+ @param configurations an array of test configurators
  */
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type
-             andCode:(DVAStubResponseHTTPCodes)statusCode;
+-(void)dva_stubOperationWithOptionsArray:(NSArray*)configurations;
 
-
-/**
- @author Pablo Romeu, 15-06-15 16:06:38
- 
- Stubs a test block with expectations.
- 
- @warning This will call `waitForExpectationsWithTimeout:handler:` by itself to discard stubbing. Do not do it yourself.
- 
- @param testBlock the test block
- @param endpoint  the endpoint to test
- @param json      the json response
- @param type      the operation type
- @param statusCode the returning HTTP status code
- @param headers    the returning headers
- 
- @since 1.0.4
- */
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type
-             andCode:(DVAStubResponseHTTPCodes)statusCode
-          andHeaders:(NSDictionary*)headers;
-
-#pragma mark tester with link conditioner
-
-/**
- @author Pablo Romeu, 15-06-22 15:06:33
- 
- Stubs a test block with expectations.
- 
- @warning This will call `waitForExpectationsWithTimeout:handler:` by itself to discard stubbing. Do not do it yourself.
- 
- @param testBlock the test block
- @param endpoint  the endpoint to test
- @param json      the json response
- @param type      the operation type
- @param statusCode the returning HTTP status code
- @param headers    the returning headers
- @param requestTime  a request time. must be >=0
- @param responseTime response time. If >=0, a time response will be applied. If <0 then download speed will be applied. See `OHHTTPStubsDownloadSpeed` constants
- 
- @since 1.0.4
- */
-
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type
-             andCode:(DVAStubResponseHTTPCodes)statusCode
-          andHeaders:(NSDictionary*)headers
-      andRequestTime:(NSTimeInterval)requestTime
-     andResponseTime:(NSTimeInterval)responseTime;
-
-#pragma mark utils
-
--(id)dva_readJsonFile:(NSString*)json;
 
 
 @end

@@ -8,6 +8,68 @@
 
 #import "XCTestCase+DVABlockStub.h"
 
+
+@implementation DVABlockStubConfigurator
+
++(instancetype)configuratorWithDictionary:(NSDictionary *)dictionary{
+    return [[DVABlockStubConfigurator alloc] initWithDictionary:dictionary];
+}
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+    self = [self init];
+    if (self) {
+        if ([dictionary isKindOfClass:[NSDictionary class]]) {
+            if (dictionary[@(kDVABlockStubConfiguratorValueEndpoint)])
+                _endpoint       = dictionary[@(kDVABlockStubConfiguratorValueEndpoint)];
+            if (dictionary[@(kDVABlockStubConfiguratorValueStatuscode)])
+                _statusCode     = [dictionary[@(kDVABlockStubConfiguratorValueStatuscode)] unsignedIntegerValue];
+            if (dictionary[@(kDVABlockStubConfiguratorValueType)])
+                _type           = [dictionary[@(kDVABlockStubConfiguratorValueType)] unsignedIntegerValue];
+            if (dictionary[@(kDVABlockStubConfiguratorValueHeaders)])
+                _headers        = dictionary[@(kDVABlockStubConfiguratorValueHeaders)];
+            if (dictionary[@(kDVABlockStubConfiguratorValueRequestTime)])
+                _requestTime    = [dictionary[@(kDVABlockStubConfiguratorValueRequestTime)] doubleValue];
+            if (dictionary[@(kDVABlockStubConfiguratorValueResponseTime)])
+                _responseTime   = [dictionary[@(kDVABlockStubConfiguratorValueResponseTime)] doubleValue];
+            if (dictionary[@(kDVABlockStubConfiguratorValueJson)])
+                _json           = dictionary[@(kDVABlockStubConfiguratorValueJson)];
+            if (dictionary[@(kDVABlockStubConfiguratorValueReadFile)])
+                _json           = [DVABlockStubConfigurator dva_readJsonFile:dictionary[@(kDVABlockStubConfiguratorValueReadFile)]];
+            if (dictionary[@(kDVABlockStubConfiguratorValueWaitTime)])
+                _waitTime       = [dictionary[@(kDVABlockStubConfiguratorValueWaitTime)] doubleValue];
+        }
+    }
+    return self;
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _statusCode     =   kDVAStubCodeOk;
+        _type           =   kDVAStubGET;
+        _headers        =   @{@"Content-Type":@"application/json"};
+        _requestTime    =   1;
+        _responseTime   =   OHHTTPStubsDownloadSpeedWifi;
+        _json           =   @"{}";
+        _waitTime       =   10;
+    }
+    return self;
+}
+
+#pragma mark - utils
+
++(id)dva_readJsonFile:(NSString*)json{
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:json ofType:@"json"];
+    NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
+    NSError *error =  nil;
+    NSAssert(myJSON,@"ERROR: No JSON FILE %@.json",json);
+    return [NSJSONSerialization JSONObjectWithData:[myJSON dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+}
+
+@end
+
+
 @implementation XCTestCase (DVABlockStub)
 
 #pragma mark - UTILS
@@ -48,17 +110,22 @@
         if ([stringEndPoint  length]>0) {
             
             id <OHHTTPStubsDescriptor> stub=[OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
-                
-                if (![request.HTTPMethod isEqualToString:[self httpOp:operation]]) {
-                    return NO;
+
+                BOOL stub = NO;
+                if ([request.HTTPMethod isEqualToString:[self httpOp:operation]]) {
+                    NSString    *queryString=[request.URL absoluteString];
+                    stub    =   [queryString rangeOfString:endpoint].location!=NSNotFound;
                 }
-                NSString*queryString=[NSString stringWithFormat:@"%@",request.URL];
-                return [queryString rangeOfString:endpoint].location!=NSNotFound;
+                NSLog(@"TEST STUB: TESTING IF STUB REQUEST %@, result %i",request,stub);
+                return stub;
                 
             } withStubResponse:^OHHTTPStubsResponse*(NSURLRequest *request) {
                 // Stub it with our "responseFile.json" stub file
-                OHHTTPStubsResponse*response=[OHHTTPStubsResponse responseWithJSONObject:responseJson statusCode:statusCode headers:headers ];
-                return [response requestTime:requestTime responseTime:responseTime];
+                OHHTTPStubsResponse*response=[OHHTTPStubsResponse responseWithJSONObject:responseJson
+                                                                              statusCode:statusCode
+                                                                                 headers:headers ];
+                return [response requestTime:requestTime
+                                responseTime:responseTime];
             }];
             
             stub.name=endpoint;
@@ -71,97 +138,41 @@
 
 #pragma convenience methods
 
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type{
-    
-    [self dva_testBlock:testBlock
-       stubbingEndpoint:endpoint
-               withJson:json
-                 opType:type
-                andCode:kDVAStubCodeOk
-             andHeaders:@{@"Content-Type":@"application/json"}];
+-(void)dva_stubOperationWithOptions:(DVABlockStubConfigurator *)configuration{
+    if (!configuration) configuration = [DVABlockStubConfigurator new];
+    [self dva_stubOperationWithOptionsArray:@[configuration]];
 }
 
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type
-             andCode:(DVAStubResponseHTTPCodes)statusCode{
-    
-    [self dva_testBlock:testBlock
-       stubbingEndpoint:endpoint
-               withJson:json
-                 opType:type
-                andCode:statusCode
-             andHeaders:@{@"Content-Type":@"application/json"}];
-}
-
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type
-             andCode:(DVAStubResponseHTTPCodes)statusCode
-          andHeaders:(NSDictionary *)headers{
-    
-    [self dva_testBlock:testBlock
-       stubbingEndpoint:endpoint
-               withJson:json
-                 opType:type
-                andCode:statusCode
-             andHeaders:headers
-         andRequestTime:0
-        andResponseTime:OHHTTPStubsDownloadSpeedWifi];
-    
+-(void)dva_stubOperationWithOptionsArray:(NSArray *)configurations{
+    for (DVABlockStubConfigurator*configurator in configurations) {
+        id <OHHTTPStubsDescriptor> stub = [self dva_stubbingWithConfiguration:configurator];
+        if (!stub) {
+            XCTFail(@"TEST STUB: COULD NOT STUB OP %@ with %@",configurator.endpoint,configurator.json);
+            return;
+        }
+        else{
+            NSLog(@"\r----\rTEST STUB: Added stub %@ for \r -op %@:%@\r -json %@\r -code %lu:%@ \r -headers %@ \r----\r",stub.name,configurator.endpoint,[self httpOp:configurator.type],configurator.json,(unsigned long)configurator.statusCode,[NSHTTPURLResponse localizedStringForStatusCode:configurator.statusCode],configurator.headers);
+        }
+    }
 }
 
 #pragma full stubbing block
 
--(void)dva_testBlock:(void (^)())testBlock
-    stubbingEndpoint:(NSString*)endpoint
-            withJson:(id)json
-              opType:(DVAStubOp)type
-             andCode:(DVAStubResponseHTTPCodes)statusCode
-          andHeaders:(NSDictionary *)headers
-      andRequestTime:(NSTimeInterval)requestTime
-     andResponseTime:(NSTimeInterval)responseTime{
-    
+
+-(id<OHHTTPStubsDescriptor>)dva_stubbingWithConfiguration:(DVABlockStubConfigurator*)configuration{
     [OHHTTPStubs onStubActivation:^(NSURLRequest *request, id<OHHTTPStubsDescriptor> stub) {
-        NSLog(@"\n----\nTEST STUB:%@ stubbed by %@.\n----\n", request.URL, stub.name);
+        NSLog(@"\r----\rTEST STUB:%@ stubbed by %@.\r----\r", request.URL, stub.name);
     }];
     
-    id <OHHTTPStubsDescriptor>stub=[self stubEndpoint:endpoint
-                                               withOp:type
-                                     withResponseJson:json
-                                        andStatusCode:statusCode
-                                           andHeaders:headers
-                                       andRequestTime:requestTime
-                                      andResponseTime:responseTime];
-    if (!stub) {
-        XCTFail(@"TEST STUB: COULD NOT STUB OP %@ with %@",endpoint,json);
-    }
-    else{
-        NSLog(@"\n----\nTEST STUB: Added stub %@ for \n -op %@:%@\n -json %@\n -code %lu:%@ \n -headers %@ \n----\n",stub.name,endpoint,[self httpOp:type],json,(unsigned long)statusCode,[NSHTTPURLResponse localizedStringForStatusCode:statusCode],headers);
-        
-        testBlock(^{
-            NSLog(@"\n----\nTEST STUB:removing all stubs %@\n----\n",[OHHTTPStubs allStubs]);
-            [OHHTTPStubs removeAllStubs];
-        });
-        [self waitForExpectationsWithTimeout:10 handler:^(NSError *error) {
-            NSLog(@"\n----\nTEST STUB:removing stubs %@\n----\n",[OHHTTPStubs allStubs]);
-            [OHHTTPStubs removeAllStubs];
-        }];
-    }
+    id <OHHTTPStubsDescriptor>stub=[self stubEndpoint:configuration.endpoint
+                                               withOp:configuration.type
+                                     withResponseJson:configuration.json
+                                        andStatusCode:configuration.statusCode
+                                           andHeaders:configuration.headers
+                                       andRequestTime:configuration.requestTime
+                                      andResponseTime:configuration.responseTime];
+    return stub;
 }
 
-#pragma utils
 
--(id)dva_readJsonFile:(NSString*)json{
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:json ofType:@"json"];
-    NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
-    NSError *error =  nil;
-    XCTAssert(myJSON,@"ERROR: No JSON FILE %@.json",json);
-    return [NSJSONSerialization JSONObjectWithData:[myJSON dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
-}
 @end
