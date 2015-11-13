@@ -62,7 +62,7 @@
         return;
     }
     
-    if (string || [string isEqualToString:@""]) {
+    if (string==nil || [string isEqualToString:@""]) {
         if (self.hidden){
             return;
         }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.6.0"
+  s.version          = "1.6.1"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
