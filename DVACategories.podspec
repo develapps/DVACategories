@@ -52,6 +52,8 @@ Pod::Spec.new do |s|
                             ** UILabel+DVABadgeLabel: Setup a label over a view like a badge.
                         * UIView:
                             ** UIView+DVABadgeLabel: Setup a view over a view like a badge.
+                        Added 1.6.0:
+                        * NSString: Badge view now can be a string
 
 # --------
 # ADD NEW CATEGORIES HERE

@@ -8,10 +8,22 @@
 
 #import "UILabel+DVABadgeLabel.h"
 
+@implementation DVABadgeLabelConfigurator
+@end
+
 @implementation UILabel (DVABadgeLabel)
 - (void)dva_addBadgeLabelToView:(UIView*)theView andPosition:(DVABadgeViewPosition)position andOffset:(UIOffset)offset{
-    self.backgroundColor = [UIColor redColor];
-    self.textColor = [UIColor whiteColor];
+    DVABadgeLabelConfigurator *configurator = [DVABadgeLabelConfigurator new];
+    configurator.backgroundColor = [UIColor redColor];
+    configurator.textColor      = [UIColor whiteColor];
+    configurator.position = position;
+    configurator.offset = offset;
+    
+}
+
+- (void)dva_addBadgeLabelToView:(UIView*)theView usingConfigurator:(DVABadgeLabelConfigurator*)configurator{
+    self.backgroundColor = configurator.backgroundColor;
+    self.textColor = configurator.textColor;
     self.textAlignment = NSTextAlignmentCenter;
     self.layer.cornerRadius = CGRectGetWidth(self.bounds)/2.0;
     self.clipsToBounds = YES;
@@ -21,7 +33,7 @@
     
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
-    [theView dva_addBadgeView:self andPosition:position andOffset:offset];
+    [theView dva_addBadgeView:self andPosition:configurator.position andOffset:configurator.offset];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self
                                                      attribute:NSLayoutAttributeWidth
                                                      relatedBy:NSLayoutRelationGreaterThanOrEqual
@@ -40,14 +52,17 @@
 }
 
 -(void)dva_setBadgeValue:(NSInteger)value animated:(BOOL)animated{
-    
+    [self dva_setBadgeString:[NSString stringWithFormat:@"%li",(long)value] animated:animated];
+}
+
+-(void)dva_setBadgeString:(NSString*)string animated:(BOOL)animated{
     if (!animated) {
-        self.hidden=value==0?YES:NO;
-        self.text = [NSString stringWithFormat:@"%zd",value];
+        self.hidden=(string || [string isEqualToString:@""])?YES:NO;
+        self.text = string;
         return;
     }
     
-    if (value == 0) {
+    if (string || [string isEqualToString:@""]) {
         if (self.hidden){
             return;
         }
@@ -55,7 +70,7 @@
         animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)];
         animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 0.1)];
         [animation setFillMode:kCAFillModeForwards];
-
+        
         CABasicAnimation *opacity = [CABasicAnimation animationWithKeyPath:@"opacity"];
         opacity.fromValue = [NSNumber numberWithFloat:1.0f];
         opacity.toValue = [NSNumber numberWithFloat:0.0f];
@@ -70,12 +85,12 @@
             self.hidden=YES;
         }];
         [self.layer addAnimation:group forKey:@"disappear"];
-
+        
         [CATransaction commit];
     }
     else{
         
-        self.text = [NSString stringWithFormat:@"%zd",value];
+        self.text = string;
         if (self.hidden){
             self.hidden=NO;
         }
@@ -88,7 +103,6 @@
         
         [self.layer addAnimation:animation forKey:@"big"];
     }
-
 }
 
 @end
