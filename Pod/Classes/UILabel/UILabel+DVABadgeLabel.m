@@ -18,7 +18,7 @@
     configurator.textColor      = [UIColor whiteColor];
     configurator.position = position;
     configurator.offset = offset;
-    
+    [self dva_addBadgeLabelToView:theView usingConfigurator:configurator];
 }
 
 - (void)dva_addBadgeLabelToView:(UIView*)theView usingConfigurator:(DVABadgeLabelConfigurator*)configurator{
