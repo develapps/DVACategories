@@ -79,10 +79,11 @@
         [group setAnimations:@[animation,opacity]];
         [group setDuration:0.6];
         [group setFillMode:kCAFillModeForwards];
-        
+        [group setRemovedOnCompletion:NO];
         [CATransaction begin];
         [CATransaction setCompletionBlock:^{
             self.hidden=YES;
+            [self.layer removeAllAnimations];
         }];
         [self.layer addAnimation:group forKey:@"disappear"];
         
