@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.6.2"
+  s.version          = "1.7.0"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -54,6 +54,8 @@ Pod::Spec.new do |s|
                             ** UIView+DVABadgeLabel: Setup a view over a view like a badge.
                         Added 1.6.0:
                         * NSString: Badge view now can be a string
+                        Added 1.7.0:
+                        * NSString: Strings from bundle
 
 # --------
 # ADD NEW CATEGORIES HERE

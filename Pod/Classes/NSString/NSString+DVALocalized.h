@@ -11,6 +11,10 @@
 @interface NSString (DVALocalized)
 -(NSString*)dva_localizedString;
 +(NSString*)dva_localizedString:(NSString*)key;
+
+-(NSString*)dva_localizedStringForTable:(NSString*)tableName;
 +(NSString*)dva_localizedString:(NSString*)key forTable:(NSString*)tableName;
 
+-(NSString*)dva_localizedStringForTable:(NSString*)tableName inBundle:(NSBundle*)bundle;
++(NSString*)dva_localizedString:(NSString*)key forTable:(NSString*)tableName inBundle:(NSBundle*)bundle;
 @end

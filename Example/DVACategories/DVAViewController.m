@@ -7,8 +7,12 @@
 //
 
 #import "DVAViewController.h"
+#import <UILabel+DVABadgeLabel.h>
+#import <NSString+DVALocalized.h>
 
 @interface DVAViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) UILabel *label;
 
 @end
 
@@ -20,10 +24,23 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [_label dva_addBadgeLabelToView:self.image andPosition:DVABadgeViewTopRight andOffset:UIOffsetMake(-10, 10)];
+    [_label layoutIfNeeded];
+    [self dispatchAgain:self];
 }
-
+- (IBAction)dispatchAgain:(id)sender {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_label dva_setBadgeString:@"1" animated:YES];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [_label dva_setBadgeString:@"2" animated:YES];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [_label dva_setBadgeString:@"" animated:YES];
+            });
+            
+        });
+    });
+}
 @end

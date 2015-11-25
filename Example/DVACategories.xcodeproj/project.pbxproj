@@ -22,6 +22,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6ED5599C1BFA2B8700002F0E /* topic-apple-watch-all.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5599B1BFA2B8700002F0E /* topic-apple-watch-all.png */; };
 		AC055CB9BEE86073098757E5 /* libPods-DVACategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7E83FAC53A39E7E8E3552C /* libPods-DVACategories.a */; };
 		C6687278456A84CEA8A3E947 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC18B6DBBA2321E4EB4B59ED /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6D7E83FAC53A39E7E8E3552C /* libPods-DVACategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVACategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED5599B1BFA2B8700002F0E /* topic-apple-watch-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topic-apple-watch-all.png"; sourceTree = "<group>"; };
 		A76CDE2B363004289BB0A89B /* DVACategories.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DVACategories.podspec; path = ../DVACategories.podspec; sourceTree = "<group>"; };
 		AC18B6DBBA2321E4EB4B59ED /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40970006106EB3078B688EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		6003F593195388D20070C39A /* DVACategories */ = {
 			isa = PBXGroup;
 			children = (
+				6ED5599B1BFA2B8700002F0E /* topic-apple-watch-all.png */,
 				6003F59C195388D20070C39A /* DVAAppDelegate.h */,
 				6003F59D195388D20070C39A /* DVAAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
@@ -280,6 +283,7 @@
 			files = (
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6ED5599C1BFA2B8700002F0E /* topic-apple-watch-all.png in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
