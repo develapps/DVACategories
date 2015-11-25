@@ -16,8 +16,21 @@
     return [NSString dva_localizedString:self];
 }
 
+-(NSString*)dva_localizedStringForTable:(NSString*)tableName{
+    return [NSString dva_localizedString:self forTable:tableName];
+}
+
 +(NSString*)dva_localizedString:(NSString*)key forTable:(NSString*)tableName{
     return NSLocalizedStringFromTable(key, tableName, key);
 }
+
+-(NSString*)dva_localizedStringForTable:(NSString*)tableName inBundle:(NSBundle*)bundle{
+    return [NSString dva_localizedString:self forTable:tableName inBundle:bundle];
+}
+
++(NSString*)dva_localizedString:(NSString*)key forTable:(NSString*)tableName inBundle:(NSBundle*)bundle{
+    return NSLocalizedStringFromTableInBundle(key, tableName, bundle, key);
+}
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import "DVAViewController.h"
 #import <UILabel+DVABadgeLabel.h>
+#import <NSString+DVALocalized.h>
 
 @interface DVAViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *image;
@@ -29,7 +30,6 @@
     [_label dva_addBadgeLabelToView:self.image andPosition:DVABadgeViewTopRight andOffset:UIOffsetMake(-10, 10)];
     [_label layoutIfNeeded];
     [self dispatchAgain:self];
-    
 }
 - (IBAction)dispatchAgain:(id)sender {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
