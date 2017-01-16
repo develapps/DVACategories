@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DVACategories"
-  s.version          = "1.7.0"
+  s.version          = "1.7.1"
   s.summary          = "This pod hosts DVACategories commonly used by DVA iOS developers."
   s.description      = <<-DESC
                        This is a pod containing categories commonly used on iOS development.
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Pablo Romeu" => "pablo.romeu@develapps.com" ,
                          "Pablo Salva" => "pablo.salva@develapps.com" }
-  s.source           = {    :git => "https://bitbucket.com/DVALibs/DVACategories.git",
+  s.source           = {    :git => "https://github.com/develapps/DVACategories.git",
                             :tag => s.version.to_s,
                             :submodules => true }
   s.social_media_url = 'https://twitter.com/pabloromeu'

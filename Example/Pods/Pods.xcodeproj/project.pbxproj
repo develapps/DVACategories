@@ -1099,6 +1099,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA066A68574EFE5AC0FE9FB29FC7FEF9 /* DVACategories.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DVACategories/DVACategories-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1134,6 +1135,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA066A68574EFE5AC0FE9FB29FC7FEF9 /* DVACategories.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DVACategories/DVACategories-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
