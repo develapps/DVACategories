@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Develapps. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonDigest.h>
 
 /**
  A category that enables secure methods for strings

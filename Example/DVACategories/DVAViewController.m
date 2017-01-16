@@ -7,8 +7,8 @@
 //
 
 #import "DVAViewController.h"
-#import <UILabel+DVABadgeLabel.h>
-#import <NSString+DVALocalized.h>
+#import <DVACategories/UILabel+DVABadgeLabel.h>
+#import <DVACategories/NSString+DVALocalized.h>
 
 @interface DVAViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *image;

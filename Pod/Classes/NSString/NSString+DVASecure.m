@@ -7,6 +7,7 @@
 //
 
 #import "NSString+DVASecure.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (DVASecure)
 
