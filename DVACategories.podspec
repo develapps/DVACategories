@@ -96,6 +96,7 @@ Pod::Spec.new do |s|
     cs.dependency 'DVACategories/UIImage'
     cs.dependency 'DVACategories/UILabel'
     cs.dependency 'DVACategories/UIView'
+	cs.dependency 'DVACategories/UITableView'
 
 #    cs.dependency 'DVACategories/DVAParseNotifications'
 #    cs.dependency 'DVACategories/DVAParseRemoteNotificationsDefaultHandler'
